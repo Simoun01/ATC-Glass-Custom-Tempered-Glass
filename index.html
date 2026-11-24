@@ -1,0 +1,2974 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATC Glass — Custom Tempered Glass &amp; Glazing | GCC Pampanga</title>
+    <meta
+      name="description"
+      content="Custom-cut tempered glass, laminated safety glass, shower enclosures, railings, and storefront glazing at Global Construct City (GCC), Pampanga. Request a custom quote in 2 minutes (EN / 中文)."
+    />
+    <meta property="og:title" content="ATC Glass — Custom Tempered Glass &amp; Glazing | GCC Pampanga" />
+    <meta
+      property="og:description"
+      content="Custom-cut tempered glass and architectural glazing in Global Construct City, Pampanga (Cluster D1, Units 1–3 &amp; 5). Bilingual EN / 中文 Smart Quote Builder."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0B1B2B" />
+
+    <!-- Google Fonts: Plus Jakarta Sans (Display/Body), Noto Sans SC (Simplified Chinese), JetBrains Mono (Specs/Dimensions) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: {
+                950: '#07121E',
+                900: '#0B1B2B',
+                800: '#12283E',
+                700: '#1A3854',
+              },
+              glassblue: '#7FD1FF',
+              frost: '#F4F8FB',
+              slatebrand: '#5A6B7B',
+              safety: '#FF7A1A',
+              safetyhover: '#E8680D',
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', '"Noto Sans SC"', 'system-ui', 'sans-serif'],
+              mono: ['"JetBrains Mono"', '"Noto Sans SC"', 'monospace'],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      :root {
+        --navy: #0b1b2b;
+        --glass-blue: #7fd1ff;
+        --frost: #f4f8fb;
+        --slate: #5a6b7b;
+        --safety: #ff7a1a;
+      }
+
+      html {
+        font-family: 'Plus Jakarta Sans', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+        background-color: #f4f8fb;
+        color: #0b1b2b;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* Headline orphan prevention */
+      h1,
+      h2,
+      .balance-text {
+        text-wrap: balance;
+      }
+
+      /* Tabular numerals for dimensions & specs */
+      .tabular-nums {
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* Hero Background Beams & Glass Refraction (Aceternity-inspired pure CSS) */
+      .hero-beams {
+        position: relative;
+        overflow: hidden;
+        background: radial-gradient(1100px 560px at 78% 18%, rgba(127, 209, 255, 0.14), transparent 62%),
+          radial-gradient(800px 500px at 14% 82%, rgba(127, 209, 255, 0.08), transparent 65%),
+          #0b1b2b;
+      }
+
+      .refraction-beam {
+        position: absolute;
+        pointer-events: none;
+        background: linear-gradient(
+          180deg,
+          rgba(127, 209, 255, 0) 0%,
+          rgba(127, 209, 255, 0.18) 48%,
+          rgba(255, 255, 255, 0.35) 50%,
+          rgba(127, 209, 255, 0.12) 54%,
+          rgba(127, 209, 255, 0) 100%
+        );
+        filter: blur(0.5px);
+        transform-origin: center;
+        will-change: transform, opacity;
+      }
+
+      .beam-1 {
+        width: 2px;
+        height: 150%;
+        top: -25%;
+        left: 22%;
+        transform: rotate(24deg) translateY(-12%);
+        animation: beamDriftA 11s ease-in-out infinite alternate;
+      }
+
+      .beam-2 {
+        width: 1px;
+        height: 160%;
+        top: -30%;
+        left: 56%;
+        transform: rotate(24deg) translateY(8%);
+        opacity: 0.7;
+        animation: beamDriftB 14s ease-in-out infinite alternate;
+      }
+
+      .beam-3 {
+        width: 3px;
+        height: 160%;
+        top: -20%;
+        right: 16%;
+        transform: rotate(24deg) translateY(-6%);
+        opacity: 0.5;
+        animation: beamDriftA 16s ease-in-out infinite alternate-reverse;
+      }
+
+      .glass-shard-prism {
+        position: absolute;
+        pointer-events: none;
+        border: 1px solid rgba(127, 209, 255, 0.16);
+        background: linear-gradient(
+          135deg,
+          rgba(127, 209, 255, 0.09) 0%,
+          rgba(255, 255, 255, 0.03) 45%,
+          rgba(127, 209, 255, 0.01) 100%
+        );
+        backdrop-filter: blur(2px);
+        will-change: transform;
+      }
+
+      @keyframes beamDriftA {
+        0% {
+          transform: rotate(24deg) translate3d(-18px, -4%, 0);
+          opacity: 0.45;
+        }
+        100% {
+          transform: rotate(24deg) translate3d(28px, 6%, 0);
+          opacity: 0.85;
+        }
+      }
+
+      @keyframes beamDriftB {
+        0% {
+          transform: rotate(24deg) translate3d(20px, 5%, 0);
+          opacity: 0.3;
+        }
+        100% {
+          transform: rotate(24deg) translate3d(-24px, -5%, 0);
+          opacity: 0.75;
+        }
+      }
+
+      /* Button & Card Shine Sweep */
+      .shine-sweep {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .shine-sweep::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        transform: translateX(-115%) skewX(-18deg);
+        background: linear-gradient(
+          90deg,
+          transparent 0%,
+          rgba(255, 255, 255, 0.28) 50%,
+          transparent 100%
+        );
+        transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+        pointer-events: none;
+      }
+
+      .shine-sweep:hover::after,
+      .shine-sweep:focus-visible::after {
+        transform: translateX(125%) skewX(-18deg);
+      }
+
+      /* Premium glassmorphism card surface with inner top highlight + 3D tilt glare */
+      .glass-card-light {
+        position: relative;
+        background: rgba(255, 255, 255, 0.78);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(255, 255, 255, 0.75);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9),
+          0 8px 24px -14px rgba(11, 27, 43, 0.14);
+        transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1),
+          border-color 240ms cubic-bezier(0.22, 1, 0.36, 1),
+          box-shadow 240ms cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      .glass-card-light:hover {
+        border-color: rgba(127, 209, 255, 0.9);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95),
+          0 18px 36px -16px rgba(11, 27, 43, 0.22);
+      }
+
+      .tilt-card::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        background: radial-gradient(
+          320px circle at var(--mx, 50%) var(--my, 50%),
+          rgba(127, 209, 255, 0.18),
+          transparent 62%
+        );
+        opacity: 0;
+        transition: opacity 220ms cubic-bezier(0.22, 1, 0.36, 1);
+        pointer-events: none;
+      }
+
+      .tilt-card:hover::before {
+        opacity: 1;
+      }
+
+      /* Animated CSS caustic fallback blobs behind hero shader */
+      @keyframes blobFloatA {
+        0% { transform: translate3d(-4%, -3%, 0) scale(1); }
+        100% { transform: translate3d(6%, 5%, 0) scale(1.12); }
+      }
+      @keyframes blobFloatB {
+        0% { transform: translate3d(4%, 4%, 0) scale(1.06); }
+        100% { transform: translate3d(-6%, -4%, 0) scale(0.96); }
+      }
+      .caustic-blob-a {
+        animation: blobFloatA 16s ease-in-out infinite alternate;
+      }
+      .caustic-blob-b {
+        animation: blobFloatB 20s ease-in-out infinite alternate;
+      }
+
+      /* Quote step transition (slide + fade) */
+      @keyframes stepSlideIn {
+        from {
+          opacity: 0;
+          transform: translate3d(14px, 0, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      .step-panel-active {
+        animation: stepSlideIn 260ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      }
+
+      /* Language crossfade */
+      .lang-fade {
+        transition: opacity 150ms ease;
+      }
+
+      body.lang-switching .lang-fade {
+        opacity: 0.4;
+      }
+
+      /* Scroll reveal with zero-latency fallback */
+      .reveal-item {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        transition: opacity 420ms cubic-bezier(0.22, 1, 0.36, 1),
+          transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      .js-reveal-ready .reveal-item:not(.is-visible) {
+        opacity: 0;
+        transform: translate3d(0, 14px, 0);
+      }
+
+      .js-reveal-ready .reveal-item.is-visible {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+
+      /* Mobile frosted menu slide-down */
+      .mobile-drawer {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 240ms cubic-bezier(0.22, 1, 0.36, 1), opacity 200ms ease;
+      }
+
+      .mobile-drawer.open {
+        max-height: 420px;
+        opacity: 1;
+      }
+
+      /* Focus ring WCAG AA */
+      :focus-visible {
+        outline: 2px solid #7fd1ff;
+        outline-offset: 2px;
+      }
+
+      /* Reduced Motion compliance */
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        .refraction-beam,
+        .caustic-blob-a,
+        .caustic-blob-b,
+        .step-panel-active {
+          animation: none !important;
+        }
+        .shine-sweep::after,
+        .glass-card-light,
+        .tilt-card,
+        .tilt-card::before,
+        .reveal-item,
+        .mobile-drawer,
+        .lang-fade {
+          transition: none !important;
+          transform: none !important;
+        }
+        .js-reveal-ready .reveal-item:not(.is-visible) {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-frost text-navy-900 antialiased selection:bg-glassblue/30 selection:text-navy-900">
+    <!-- Top Animated Scroll Progress Bar -->
+    <div
+      id="scroll-progress-bar"
+      aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-[60] h-[3px] origin-left scale-x-0 bg-gradient-to-r from-glassblue via-white to-safety pointer-events-none"
+    ></div>
+
+    <!-- ==================== STICKY FROSTED HEADER ==================== -->
+    <header
+      id="site-header"
+      class="sticky top-0 z-50 border-b border-white/10 bg-navy-900/88 text-white backdrop-blur-md"
+    >
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:gap-8 lg:px-8">
+        <!-- Zone 1: Single-line Brand Wordmark -->
+        <a
+          href="#top"
+          class="flex items-center gap-2.5 whitespace-nowrap shrink-0 text-lg font-bold tracking-tight text-white hover:text-glassblue transition-colors"
+        >
+          <svg
+            aria-hidden="true"
+            class="h-6 w-6 text-glassblue shrink-0"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <polygon points="4,4 16,2 20,18 8,21" fill="rgba(127,209,255,0.16)" />
+            <line x1="8" y1="7" x2="15" y2="15" stroke="rgba(255,255,255,0.75)" />
+          </svg>
+          <span>ATC Glass</span>
+        </a>
+
+        <!-- Zone 2: Desktop Navigation Links -->
+        <nav aria-label="Primary Navigation" class="hidden md:flex items-center gap-6 lg:gap-7 text-sm font-medium text-slate-200">
+          <a
+            href="#products"
+            class="lang-fade whitespace-nowrap shrink-0 py-1 hover:text-glassblue transition-colors"
+            data-en="Products"
+            data-zh="产品中心"
+          >Products</a>
+          <a
+            href="#applications"
+            class="lang-fade whitespace-nowrap shrink-0 py-1 hover:text-glassblue transition-colors"
+            data-en="Applications"
+            data-zh="应用场景"
+          >Applications</a>
+          <a
+            href="#specs"
+            class="lang-fade whitespace-nowrap shrink-0 py-1 hover:text-glassblue transition-colors"
+            data-en="Specs"
+            data-zh="技术规格"
+          >Specs</a>
+          <a
+            href="#projects"
+            class="lang-fade whitespace-nowrap shrink-0 py-1 hover:text-glassblue transition-colors"
+            data-en="Projects"
+            data-zh="工程案例"
+          >Projects</a>
+          <a
+            href="#contact"
+            class="lang-fade whitespace-nowrap shrink-0 py-1 hover:text-glassblue transition-colors"
+            data-en="Contact"
+            data-zh="联系我们"
+          >Contact</a>
+        </nav>
+
+        <!-- Zone 3: Language Toggle + Primary Orange CTA + Mobile Hamburger -->
+        <div class="flex items-center gap-2.5 sm:gap-3 shrink-0">
+          <!-- High-contrast EN | 中文 Toggle -->
+          <div
+            role="group"
+            aria-label="Language Switcher"
+            class="inline-flex items-center rounded-lg border border-white/20 bg-navy-950/70 p-0.5 text-xs font-semibold"
+          >
+            <button
+              type="button"
+              id="lang-btn-en"
+              data-lang-switch="en"
+              class="whitespace-nowrap shrink-0 rounded-md px-2.5 py-1.5 transition-colors focus-visible:outline-none"
+              aria-pressed="true"
+            >
+              EN
+            </button>
+            <button
+              type="button"
+              id="lang-btn-zh"
+              data-lang-switch="zh"
+              class="whitespace-nowrap shrink-0 rounded-md px-2.5 py-1.5 transition-colors focus-visible:outline-none"
+              aria-pressed="false"
+            >
+              中文
+            </button>
+          </div>
+
+          <a
+            href="#quote"
+            data-magnetic
+            class="shine-sweep lang-fade hidden sm:inline-flex items-center justify-center whitespace-nowrap shrink-0 rounded-lg bg-safety px-4 py-2 text-xs sm:text-sm font-semibold text-white hover:bg-safetyhover transition-colors"
+            data-en="Get a Quote"
+            data-zh="立即报价"
+          >Get a Quote</a>
+
+          <button
+            type="button"
+            id="mobile-menu-btn"
+            aria-expanded="false"
+            aria-controls="mobile-nav-drawer"
+            aria-label="Toggle Menu"
+            class="inline-flex md:hidden items-center justify-center rounded-lg border border-white/15 bg-navy-800/80 p-2 text-white hover:border-glassblue/60"
+          >
+            <svg id="menu-icon-open" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+            <svg id="menu-icon-close" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" d="M6 6l12 12M18 6L6 18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Slide-Down Frosted Panel -->
+      <div
+        id="mobile-nav-drawer"
+        class="mobile-drawer md:hidden border-t border-white/10 bg-navy-900/95 backdrop-blur-lg"
+      >
+        <nav aria-label="Mobile Navigation" class="flex flex-col gap-1 px-4 py-3 text-sm font-medium text-slate-100">
+          <a href="#products" class="mobile-nav-link rounded-lg px-3 py-2.5 hover:bg-white/10" data-en="Products" data-zh="产品中心">Products</a>
+          <a href="#applications" class="mobile-nav-link rounded-lg px-3 py-2.5 hover:bg-white/10" data-en="Applications" data-zh="应用场景">Applications</a>
+          <a href="#specs" class="mobile-nav-link rounded-lg px-3 py-2.5 hover:bg-white/10" data-en="Specs" data-zh="技术规格">Specs</a>
+          <a href="#projects" class="mobile-nav-link rounded-lg px-3 py-2.5 hover:bg-white/10" data-en="Projects" data-zh="工程案例">Projects</a>
+          <a href="#contact" class="mobile-nav-link rounded-lg px-3 py-2.5 hover:bg-white/10" data-en="Contact" data-zh="联系我们">Contact</a>
+          <a
+            href="#quote"
+            class="mobile-nav-link mt-2 inline-flex items-center justify-center rounded-lg bg-safety px-4 py-3 text-center font-semibold text-white hover:bg-safetyhover"
+            data-en="Get a Quote in 2 Minutes"
+            data-zh="2 分钟快速获取报价"
+          >Get a Quote in 2 Minutes</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ==================== 1. HERO (DEEP NAVY + WEBGL CAUSTIC SHADER + 3D GLASS) ==================== -->
+      <section class="hero-beams text-white border-b border-navy-700/60">
+        <!-- Layer 1: CSS Animated Gradient Mesh & Caustic Blobs (instant fallback behind WebGL shader) -->
+        <div class="pointer-events-none absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
+          <div class="caustic-blob-a absolute -top-24 -left-24 h-96 w-96 rounded-full bg-[#134e6f]/35 blur-3xl"></div>
+          <div class="caustic-blob-b absolute -bottom-24 right-1/4 h-[28rem] w-[28rem] rounded-full bg-glassblue/15 blur-3xl"></div>
+        </div>
+
+        <!-- Layer 2: Lightweight WebGL Caustic Light Shader Background -->
+        <div id="hero-caustic-bg" class="pointer-events-none absolute inset-0 z-0" aria-hidden="true"></div>
+
+        <!-- Layer 3: Faint Diagonal Sweeping Light-Beam Streaks -->
+        <div class="refraction-beam beam-1 z-[1]" aria-hidden="true"></div>
+        <div class="refraction-beam beam-2 z-[1]" aria-hidden="true"></div>
+        <div class="refraction-beam beam-3 z-[1]" aria-hidden="true"></div>
+
+        <div class="relative z-10 mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+          <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-10">
+            <!-- Left Hero Copy -->
+            <div class="lg:col-span-6">
+              <p
+                class="lang-fade mb-4 text-xs sm:text-sm font-medium tracking-wide text-glassblue"
+                data-en="Global Construct City (GCC), Pampanga · Cluster D1, Units 1–3 &amp; 5"
+                data-zh="菲律宾邦板牙省 GCC 建材城 · D1 区 1–3 号及 5 号"
+              >
+                Global Construct City (GCC), Pampanga · Cluster D1, Units 1–3 &amp; 5
+              </p>
+
+              <h1
+                id="hero-headline"
+                class="lang-fade balance-text text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-[3.5rem] lg:leading-[1.08]"
+                data-en="Custom Tempered Glass, Quoted Fast."
+                data-zh="定制钢化玻璃 · 快速报价"
+              >
+                Custom Tempered Glass, Quoted Fast.
+              </h1>
+
+              <p
+                class="lang-fade gsap-blur-reveal mt-5 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg"
+                data-en="Precision-cut architectural glass for contractors, architects, shop fitters, and homeowners across Pampanga. Submit your exact dimensions, thickness, and edge profile once—get a clear quote without back-and-forth guesswork."
+                data-zh="专为邦板牙及周边工程承包商、建筑师、店铺装修及住宅业主提供精密定制钢化玻璃。一次提交精确尺寸、厚度与磨边工艺，免去反复沟通，快速获得专业报价。"
+              >
+                Precision-cut architectural glass for contractors, architects, shop fitters, and homeowners across Pampanga. Submit your exact dimensions, thickness, and edge profile once—get a clear quote without back-and-forth guesswork.
+              </p>
+
+              <!-- Primary CTA + Secondary 3D Anatomy / Specs Anchor -->
+              <div class="mt-8 flex flex-wrap items-center gap-4">
+                <a
+                  href="#quote"
+                  data-magnetic
+                  class="shine-sweep lang-fade inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-safety px-6 py-3.5 text-sm sm:text-base font-semibold text-white shadow-lg shadow-safety/25 hover:bg-safetyhover transition-colors"
+                  data-en="Get a Quote in 2 Minutes"
+                  data-zh="2 分钟快速获取报价"
+                >
+                  Get a Quote in 2 Minutes
+                </a>
+
+                <a
+                  href="#anatomy"
+                  class="shine-sweep lang-fade inline-flex items-center justify-center whitespace-nowrap rounded-lg border border-white/25 bg-white/10 px-5 py-3.5 text-sm font-medium text-white hover:border-glassblue hover:bg-white/15 transition-colors"
+                  data-en="Inspect 3D Glass Anatomy"
+                  data-zh="交互式 3D 玻璃结构预览"
+                >
+                  Inspect 3D Glass Anatomy
+                </a>
+              </div>
+
+              <!-- Quick Technical Summary Strip with Animated Counters -->
+              <div class="mt-10 grid grid-cols-2 gap-6 border-t border-white/15 pt-6 sm:grid-cols-3">
+                <div>
+                  <div class="font-mono text-xl font-semibold text-glassblue tabular-nums">
+                    <span data-count-to="5">5</span> – <span data-count-to="12" data-count-suffix=" mm">12 mm</span>
+                  </div>
+                  <div
+                    class="lang-fade mt-1 text-xs text-slate-300"
+                    data-en="Tempered &amp; Laminated Range"
+                    data-zh="钢化与夹胶常用厚度"
+                  >Tempered &amp; Laminated Range</div>
+                </div>
+                <div>
+                  <div class="font-mono text-xl font-semibold text-glassblue tabular-nums">
+                    <span data-count-to="100">100</span> – <span data-count-to="3600" data-count-suffix=" mm">3600 mm</span>
+                  </div>
+                  <div
+                    class="lang-fade mt-1 text-xs text-slate-300"
+                    data-en="Custom Cut Dimensions"
+                    data-zh="定制裁切尺寸范围"
+                  >Custom Cut Dimensions</div>
+                </div>
+                <div class="col-span-2 sm:col-span-1">
+                  <div class="font-mono text-xl font-semibold text-glassblue">EN / 中文</div>
+                  <div
+                    class="lang-fade mt-1 text-xs text-slate-300"
+                    data-en="Bilingual Project Support"
+                    data-zh="中英双语工程对接"
+                  >Bilingual Project Support</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Hero: Live Three.js 3D Floating Tempered Glass Pane (+ Static Fallback) -->
+            <div class="lg:col-span-6">
+              <div id="hero-3d-stage" class="relative w-full">
+                <!-- Active Three.js WebGL Mount -->
+                <div id="hero-3d-canvas-host" class="relative z-20 h-[340px] sm:h-[420px] lg:h-[480px] w-full pointer-events-auto touch-none select-none"></div>
+                <p
+                  class="lang-fade pointer-events-none select-none mt-1 text-center text-[11px] font-mono text-slate-400"
+                  data-en="Drag to rotate 3D tempered pane"
+                  data-zh="拖拽旋转 3D 钢化玻璃"
+                >Drag to rotate 3D tempered pane</p>
+
+                <!-- Graceful Static SVG Fallback (shown automatically if WebGL is unavailable) -->
+                <div
+                  id="hero-static-fallback"
+                  class="hidden rounded-2xl border border-glassblue/25 bg-navy-800/75 p-6"
+                >
+                  <div class="flex items-center justify-between border-b border-white/10 pb-3 text-xs text-slate-300">
+                    <span class="lang-fade font-medium" data-en="Custom Fabrication Blueprint" data-zh="定制玻璃加工示意">Custom Fabrication Blueprint</span>
+                    <span class="font-mono text-glassblue tabular-nums">±1.0 mm</span>
+                  </div>
+                  <div class="my-5 flex items-center justify-center">
+                    <svg viewBox="0 0 380 250" class="w-full max-w-md" role="img" aria-label="Architectural Tempered Glass Dimension Diagram">
+                      <defs>
+                        <linearGradient id="heroGlassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stop-color="#7FD1FF" stop-opacity="0.34" />
+                          <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.16" />
+                          <stop offset="100%" stop-color="#7FD1FF" stop-opacity="0.08" />
+                        </linearGradient>
+                      </defs>
+                      <polygon points="86,48 296,48 304,56 304,196 296,204 86,204" fill="rgba(127,209,255,0.14)" />
+                      <rect x="80" y="42" width="216" height="156" rx="2" fill="url(#heroGlassGrad)" stroke="#7FD1FF" stroke-width="1.6" />
+                      <circle cx="98" cy="74" r="5" fill="#0B1B2B" stroke="#7FD1FF" stroke-width="1.5" />
+                      <circle cx="98" cy="166" r="5" fill="#0B1B2B" stroke="#7FD1FF" stroke-width="1.5" />
+                      <text x="188" y="228" text-anchor="middle" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="11">10mm · Beveled Edge · IOR 1.5</text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 2. PRODUCTS GRID (FROST WHITE CANVAS) ==================== -->
+      <section id="products" class="bg-frost py-16 sm:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="gsap-blur-reveal flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p
+                class="lang-fade text-xs font-semibold tracking-wide text-slatebrand"
+                data-en="01 · Custom Glass Products"
+                data-zh="01 · 定制玻璃产品系列"
+              >01 · Custom Glass Products</p>
+              <h2
+                class="lang-fade mt-1 text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl"
+                data-en="Architectural &amp; Safety Glazing"
+                data-zh="建筑与安全玻璃定制"
+              >Architectural &amp; Safety Glazing</h2>
+            </div>
+            <p
+              class="lang-fade max-w-xl text-sm leading-relaxed text-slatebrand"
+              data-en="Select any glass category below to pre-fill your custom quote request with the matching product specification."
+              data-zh="点击任意产品卡片即可自动带入对应玻璃类型，直接进入定制报价流程。"
+            >
+              Select any glass category below to pre-fill your custom quote request with the matching product specification.
+            </p>
+          </div>
+
+          <!-- Product Cards rendered via JS from COPY config so labels stay 100% synced -->
+          <div id="products-grid" class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"></div>
+        </div>
+      </section>
+
+      <!-- ==================== 3. SMART QUOTE BUILDER (KEY FEATURE: 2-COLUMN) ==================== -->
+      <section id="quote" class="border-y border-slate-200/80 bg-white py-16 sm:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="reveal-item max-w-3xl">
+            <p
+              class="lang-fade text-xs font-semibold tracking-wide text-slatebrand"
+              data-en="02 · Interactive Configurator"
+              data-zh="02 · 智能在线选型"
+            >02 · Interactive Configurator</p>
+            <h2
+              class="lang-fade mt-1 text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl"
+              data-en="Smart Quote Builder"
+              data-zh="智能定制报价单"
+            >Smart Quote Builder</h2>
+            <p
+              class="lang-fade mt-2 text-sm sm:text-base text-slatebrand"
+              data-en="Complete the 5 steps to generate a fabrication-ready specification summary. No guessing—send directly to our GCC Pampanga desk."
+              data-zh="按 5 个步骤填写您的定制参数，实时预览尺寸与面积，生成完整加工规格清单后直接发送至邦板牙 GCC 门店。"
+            >
+              Complete the 5 steps to generate a fabrication-ready specification summary. No guessing—send directly to our GCC Pampanga desk.
+            </p>
+          </div>
+
+          <!-- Two-Column Quote Builder Grid -->
+          <div class="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-start">
+            <!-- LEFT COLUMN: 5-Step Wizard Card -->
+            <div class="lg:col-span-7">
+              <div class="rounded-2xl border border-slate-200 bg-frost/60 p-5 sm:p-7">
+                <!-- Progress Bar & Step Tabs -->
+                <div class="mb-6">
+                  <div class="flex items-center justify-between text-xs font-medium text-slatebrand">
+                    <span id="quote-step-counter" class="font-mono tabular-nums">Step 1 / 5</span>
+                    <span id="quote-step-name" class="lang-fade font-semibold text-navy-900">Glass Type</span>
+                  </div>
+                  <div class="mt-2.5 h-2 w-full overflow-hidden rounded-full bg-slate-200">
+                    <div
+                      id="quote-progress-bar"
+                      class="h-full rounded-full bg-safety transition-all duration-300"
+                      style="width: 20%"
+                    ></div>
+                  </div>
+                  <div id="quote-step-tabs" class="mt-3 grid grid-cols-5 gap-1.5" role="tablist" aria-label="Quote Builder Steps"></div>
+                </div>
+
+                <!-- Dynamic Step Content Container -->
+                <form id="quote-form" novalidate>
+                  <!-- STEP 1: Glass Type -->
+                  <div data-step-panel="1" class="step-panel">
+                    <h3
+                      class="lang-fade text-lg font-semibold text-navy-900"
+                      data-en="1. Choose Glass or Glazing Type"
+                      data-zh="1. 选择玻璃或门窗类型"
+                    >1. Choose Glass or Glazing Type</h3>
+                    <p
+                      class="lang-fade mt-1 text-xs sm:text-sm text-slatebrand"
+                      data-en="Pick the primary product for this quotation."
+                      data-zh="请选择本次报价所需的主要玻璃类别。"
+                    >Pick the primary product for this quotation.</p>
+                    <div id="step1-options" class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2"></div>
+                  </div>
+
+                  <!-- STEP 2: Dimensions & Quantity -->
+                  <div data-step-panel="2" class="step-panel hidden">
+                    <h3
+                      class="lang-fade text-lg font-semibold text-navy-900"
+                      data-en="2. Enter Dimensions (mm) &amp; Quantity"
+                      data-zh="2. 输入定制尺寸 (毫米 mm) 与数量"
+                    >2. Enter Dimensions (mm) &amp; Quantity</h3>
+                    <p
+                      class="lang-fade mt-1 text-xs sm:text-sm text-slatebrand"
+                      data-en="Accepted panel bounds: 100 mm to 3600 mm per side. Preview scales live on the right."
+                      data-zh="单边允许范围：100 mm 至 3600 mm。右侧面板将实时按比例缩放预览。"
+                    >Accepted panel bounds: 100 mm to 3600 mm per side. Preview scales live on the right.</p>
+
+                    <!-- Quick Presets -->
+                    <div class="mt-4">
+                      <span class="lang-fade block text-xs font-medium text-slatebrand" data-en="Quick Presets:" data-zh="常用参考尺寸：">Quick Presets:</span>
+                      <div class="mt-2 flex flex-wrap gap-2">
+                        <button type="button" data-preset="900x2100" class="preset-btn rounded-lg border border-slate-200 bg-white px-3 py-1.5 font-mono text-xs text-navy-900 hover:border-glassblue">
+                          900 × 2100 mm
+                        </button>
+                        <button type="button" data-preset="800x2000" class="preset-btn rounded-lg border border-slate-200 bg-white px-3 py-1.5 font-mono text-xs text-navy-900 hover:border-glassblue">
+                          800 × 2000 mm
+                        </button>
+                        <button type="button" data-preset="1200x1500" class="preset-btn rounded-lg border border-slate-200 bg-white px-3 py-1.5 font-mono text-xs text-navy-900 hover:border-glassblue">
+                          1200 × 1500 mm
+                        </button>
+                        <button type="button" data-preset="1000x1100" class="preset-btn rounded-lg border border-slate-200 bg-white px-3 py-1.5 font-mono text-xs text-navy-900 hover:border-glassblue">
+                          1000 × 1100 mm
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-3">
+                      <div>
+                        <label for="input-width" class="lang-fade block text-xs font-semibold text-navy-900" data-en="Width (mm)" data-zh="宽度 (mm)">Width (mm)</label>
+                        <input
+                          id="input-width"
+                          type="number"
+                          min="100"
+                          max="3600"
+                          step="1"
+                          value="900"
+                          required
+                          class="mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 font-mono text-sm text-navy-900 tabular-nums focus:border-navy-900 focus:outline-none"
+                        />
+                      </div>
+                      <div>
+                        <label for="input-height" class="lang-fade block text-xs font-semibold text-navy-900" data-en="Height (mm)" data-zh="高度 (mm)">Height (mm)</label>
+                        <input
+                          id="input-height"
+                          type="number"
+                          min="100"
+                          max="3600"
+                          step="1"
+                          value="2100"
+                          required
+                          class="mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 font-mono text-sm text-navy-900 tabular-nums focus:border-navy-900 focus:outline-none"
+                        />
+                      </div>
+                      <div>
+                        <label for="input-qty" class="lang-fade block text-xs font-semibold text-navy-900" data-en="Quantity (pcs)" data-zh="数量 (片)">Quantity (pcs)</label>
+                        <input
+                          id="input-qty"
+                          type="number"
+                          min="1"
+                          max="500"
+                          step="1"
+                          value="1"
+                          required
+                          class="mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 font-mono text-sm text-navy-900 tabular-nums focus:border-navy-900 focus:outline-none"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Area Calculation Banner -->
+                    <div class="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3">
+                      <span class="lang-fade text-xs font-medium text-slatebrand" data-en="Auto-Calculated Glass Area" data-zh="自动计算玻璃面积">Auto-Calculated Glass Area</span>
+                      <div class="font-mono text-sm font-semibold text-navy-900 tabular-nums" aria-live="polite">
+                        <span id="calc-single-area">1.89 m²</span>
+                        <span class="text-slatebrand"> · </span>
+                        <span id="calc-total-area" class="text-navy-900">Total: 1.89 m²</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- STEP 3: Thickness, Edge Finish & Cutouts -->
+                  <div data-step-panel="3" class="step-panel hidden">
+                    <h3
+                      class="lang-fade text-lg font-semibold text-navy-900"
+                      data-en="3. Thickness, Edge Finish &amp; Cutouts"
+                      data-zh="3. 选择厚度、磨边工艺与打孔"
+                    >3. Thickness, Edge Finish &amp; Cutouts</h3>
+
+                    <!-- Thickness Selection -->
+                    <div class="mt-4">
+                      <span class="lang-fade block text-xs font-semibold text-navy-900" data-en="Glass Thickness" data-zh="玻璃厚度">Glass Thickness</span>
+                      <div id="thickness-options" class="mt-2 grid grid-cols-5 gap-2"></div>
+                    </div>
+
+                    <!-- Edge Finish with Small SVG Cross-Section Diagrams -->
+                    <div class="mt-5">
+                      <span class="lang-fade block text-xs font-semibold text-navy-900" data-en="Edge Finish" data-zh="磨边类型">Edge Finish</span>
+                      <div id="edge-options" class="mt-2 grid grid-cols-1 gap-3 sm:grid-cols-3"></div>
+                    </div>
+
+                    <!-- Holes & Cutouts -->
+                    <div class="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-3">
+                      <div>
+                        <label for="input-holes" class="lang-fade block text-xs font-semibold text-navy-900" data-en="Holes / Cutouts (qty)" data-zh="打孔 / 开缺数量">Holes / Cutouts (qty)</label>
+                        <input
+                          id="input-holes"
+                          type="number"
+                          min="0"
+                          max="50"
+                          step="1"
+                          value="0"
+                          class="mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 font-mono text-sm text-navy-900 tabular-nums focus:border-navy-900 focus:outline-none"
+                        />
+                      </div>
+                      <div class="sm:col-span-2">
+                        <label for="input-notes" class="lang-fade block text-xs font-semibold text-navy-900" data-en="Cutout / Hardware Notes (Optional)" data-zh="开孔 / 五金配件备注（选填）">Cutout / Hardware Notes (Optional)</label>
+                        <input
+                          id="input-notes"
+                          type="text"
+                          maxlength="180"
+                          placeholder="e.g., 2 hinge cutouts, 1 handle hole"
+                          class="mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-navy-900 placeholder:text-slate-400 focus:border-navy-900 focus:outline-none"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- STEP 4: Upload Site Photo (Client-side Preview Only) -->
+                  <div data-step-panel="4" class="step-panel hidden">
+                    <h3
+                      class="lang-fade text-lg font-semibold text-navy-900"
+                      data-en="4. Site Photo or Sketch (Optional)"
+                      data-zh="4. 上传现场照片或手绘图（选填）"
+                    >4. Site Photo or Sketch (Optional)</h3>
+                    <p
+                      class="lang-fade mt-1 text-xs sm:text-sm text-slatebrand"
+                      data-en="Previewed locally in your browser only—never uploaded to an external server. Helpful when checking frames, walls, or hardware clearances."
+                      data-zh="仅在本地浏览器实时预览，不会上传至外部服务器。便于后续通过微信、WhatsApp 或邮件发给我们核对安装位。"
+                    >
+                      Previewed locally in your browser only—never uploaded to an external server. Helpful when checking frames, walls, or hardware clearances.
+                    </p>
+
+                    <div class="mt-4">
+                      <label
+                        for="input-photo"
+                        class="flex cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed border-slate-300 bg-white px-6 py-8 text-center hover:border-navy-900 transition-colors"
+                      >
+                        <svg class="h-9 w-9 text-slatebrand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                          <rect x="3" y="5" width="18" height="14" rx="2" />
+                          <circle cx="8.5" cy="10.5" r="1.5" />
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M21 16l-5-5-4 4-3-3-6 6" />
+                        </svg>
+                        <span class="lang-fade mt-2 text-sm font-semibold text-navy-900" data-en="Click to select a site photo or drawing" data-zh="点击选择现场照片或图纸">Click to select a site photo or drawing</span>
+                        <span class="lang-fade mt-1 text-xs text-slatebrand" data-en="JPG, PNG, or WEBP up to 10 MB" data-zh="支持 JPG / PNG / WEBP，最大 10 MB">JPG, PNG, or WEBP up to 10 MB</span>
+                        <input id="input-photo" type="file" accept="image/*" class="sr-only" />
+                      </label>
+
+                      <!-- Preview Box -->
+                      <div id="photo-preview-box" class="mt-4 hidden rounded-xl border border-slate-200 bg-white p-3">
+                        <div class="flex items-center gap-4">
+                          <img
+                            id="photo-preview-img"
+                            src=""
+                            alt="Uploaded site preview"
+                            class="h-20 w-24 rounded-lg border border-slate-200 object-cover shrink-0"
+                          />
+                          <div class="min-w-0 flex-1">
+                            <div id="photo-preview-name" class="truncate text-sm font-semibold text-navy-900"></div>
+                            <div id="photo-preview-meta" class="mt-0.5 font-mono text-xs text-slatebrand"></div>
+                            <button
+                              type="button"
+                              id="photo-remove-btn"
+                              class="lang-fade mt-2 text-xs font-semibold text-red-600 hover:underline"
+                              data-en="Remove photo"
+                              data-zh="移除照片"
+                            >Remove photo</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- STEP 5: Contact & Preferred Language -->
+                  <div data-step-panel="5" class="step-panel hidden">
+                    <h3
+                      class="lang-fade text-lg font-semibold text-navy-900"
+                      data-en="5. Your Contact Details &amp; Preferred Language"
+                      data-zh="5. 联系方式与报价语言偏好"
+                    >5. Your Contact Details &amp; Preferred Language</h3>
+                    <p
+                      class="lang-fade mt-1 text-xs sm:text-sm text-slatebrand"
+                      data-en="Tell us where to send your official quote and whether you prefer English or Chinese."
+                      data-zh="请填写联系人、手机号及项目地点，并选择您希望使用的沟通语言。"
+                    >Tell us where to send your official quote and whether you prefer English or Chinese.</p>
+
+                    <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                      <div>
+                        <label for="input-name" class="lang-fade block text-xs font-semibold text-navy-900" data-en="Your Name / Company *" data-zh="姓名 / 公司名称 *">Your Name / Company *</label>
+                        <input
+                          id="input-name"
+                          type="text"
+                          required
+                          placeholder="e.g., Juan Dela Cruz / Chen Construction"
+                          class="mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-navy-900 placeholder:text-slate-400 focus:border-navy-900 focus:outline-none"
+                        />
+                      </div>
+                      <div>
+                        <label for="input-phone" class="lang-fade block text-xs font-semibold text-navy-900" data-en="Mobile / WhatsApp / WeChat No. *" data-zh="手机号 / WhatsApp / 微信号 *">Mobile / WhatsApp / WeChat No. *</label>
+                        <input
+                          id="input-phone"
+                          type="tel"
+                          required
+                          placeholder="+63 9XX XXX XXXX"
+                          class="mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 font-mono text-sm text-navy-900 placeholder:text-slate-400 focus:border-navy-900 focus:outline-none"
+                        />
+                      </div>
+                      <div class="sm:col-span-2">
+                        <label for="input-location" class="lang-fade block text-xs font-semibold text-navy-900" data-en="Project Location (City / Barangay) *" data-zh="项目地点（城市 / 区域）*">Project Location (City / Barangay) *</label>
+                        <input
+                          id="input-location"
+                          type="text"
+                          required
+                          placeholder="e.g., Clark Freeport / Angeles City / San Fernando, Pampanga"
+                          class="mt-1.5 w-full rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-navy-900 placeholder:text-slate-400 focus:border-navy-900 focus:outline-none"
+                        />
+                      </div>
+
+                      <!-- Preferred Quote Language inside form -->
+                      <div class="sm:col-span-2">
+                        <span class="lang-fade block text-xs font-semibold text-navy-900" data-en="Preferred Quote Language" data-zh="期望接收报价的语言">Preferred Quote Language</span>
+                        <div class="mt-2 grid grid-cols-2 gap-3">
+                          <label class="flex cursor-pointer items-center gap-2.5 rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm font-medium text-navy-900 has-[:checked]:border-navy-900 has-[:checked]:bg-navy-900/5">
+                            <input type="radio" name="quoteLang" value="en" checked class="accent-navy-900" />
+                            <span>English</span>
+                          </label>
+                          <label class="flex cursor-pointer items-center gap-2.5 rounded-lg border border-slate-300 bg-white px-3.5 py-2.5 text-sm font-medium text-navy-900 has-[:checked]:border-navy-900 has-[:checked]:bg-navy-900/5">
+                            <input type="radio" name="quoteLang" value="zh" class="accent-navy-900" />
+                            <span>简体中文 (Chinese)</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Validation Error Alert (Bilingual, Accessible) -->
+                  <div
+                    id="quote-error-box"
+                    role="alert"
+                    aria-live="polite"
+                    class="mt-4 hidden rounded-lg border border-red-300 bg-red-50 px-4 py-2.5 text-xs sm:text-sm font-medium text-red-800"
+                  ></div>
+
+                  <!-- Wizard Footer Controls -->
+                  <div class="mt-6 flex items-center justify-between gap-3 border-t border-slate-200 pt-5">
+                    <button
+                      type="button"
+                      id="btn-prev-step"
+                      class="lang-fade rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-navy-900 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed"
+                      data-en="Back"
+                      data-zh="上一步"
+                    >Back</button>
+
+                    <div class="flex items-center gap-3">
+                      <button
+                        type="button"
+                        id="btn-next-step"
+                        class="shine-sweep lang-fade rounded-lg bg-navy-900 px-5 py-2.5 text-sm font-semibold text-white hover:bg-navy-800 transition-colors"
+                        data-en="Continue"
+                        data-zh="下一步"
+                      >Continue</button>
+
+                      <button
+                        type="submit"
+                        id="btn-submit-quote"
+                        class="shine-sweep lang-fade hidden rounded-lg bg-safety px-6 py-2.5 text-sm font-semibold text-white hover:bg-safetyhover transition-colors"
+                        data-en="Generate Quote Summary"
+                        data-zh="生成定制报价单"
+                      >Generate Quote Summary</button>
+                    </div>
+                  </div>
+                </form>
+
+                <!-- SUBMITTED SUMMARY VIEW -->
+                <div id="quote-summary-view" class="hidden step-panel-active">
+                  <div class="rounded-xl border border-emerald-200 bg-emerald-50/70 px-4 py-3">
+                    <p id="quote-sla-banner" class="text-sm font-semibold text-emerald-950"></p>
+                    <p
+                      class="lang-fade mt-0.5 text-xs text-emerald-800"
+                      data-en="Zero automated price guesses—our estimator reviews your cutouts and site details manually. Send your summary below:"
+                      data-zh="定制玻璃需结合打孔与现场条件核算，下方不显示预估假价格。请通过任一渠道发送您的规格摘要："
+                    >
+                      Zero automated price guesses—our estimator reviews your cutouts and site details manually. Send your summary below:
+                    </p>
+                  </div>
+
+                  <div class="mt-4 rounded-xl border border-slate-200 bg-white p-4">
+                    <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
+                      <span class="lang-fade text-xs font-semibold text-slatebrand" data-en="Formatted Quote Request" data-zh="格式化报价请求摘要">Formatted Quote Request</span>
+                      <button
+                        type="button"
+                        id="btn-copy-summary"
+                        class="lang-fade rounded-md border border-slate-200 px-2.5 py-1 text-xs font-semibold text-navy-900 hover:border-navy-900"
+                        data-en="Copy Summary"
+                        data-zh="复制摘要"
+                      >Copy Summary</button>
+                    </div>
+                    <pre
+                      id="quote-summary-text"
+                      class="mt-3 whitespace-pre-wrap font-mono text-xs leading-relaxed text-navy-900"
+                    ></pre>
+                    <div id="summary-photo-note" class="mt-3 hidden border-t border-slate-100 pt-2.5 text-xs text-slatebrand"></div>
+                  </div>
+
+                  <!-- Emphasized Quote Channels: WhatsApp, Email, WeChat, Phone Number -->
+                  <div class="mt-5">
+                    <p
+                      class="lang-fade text-xs font-semibold text-navy-900"
+                      data-en="Send or Contact Directly:"
+                      data-zh="选择发送或联系渠道："
+                    >Send or Contact Directly:</p>
+                    <div class="mt-2.5 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+                      <a
+                        id="dispatch-whatsapp"
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="shine-sweep inline-flex items-center justify-center gap-2 rounded-lg bg-[#168A49] px-4 py-3 text-sm font-semibold text-white hover:bg-[#12733C] transition-colors"
+                      >
+                        <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                        </svg>
+                        <span class="lang-fade" data-en="Send via WhatsApp" data-zh="通过 WhatsApp 发送">Send via WhatsApp</span>
+                      </a>
+
+                      <a
+                        id="dispatch-email"
+                        href="#"
+                        class="inline-flex items-center justify-center gap-2 rounded-lg bg-navy-900 px-4 py-3 text-sm font-semibold text-white hover:bg-navy-800 transition-colors"
+                      >
+                        <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <rect x="3" y="5" width="18" height="14" rx="2" />
+                          <path d="M3 7l9 6 9-6" />
+                        </svg>
+                        <span class="lang-fade" data-en="Send via Email" data-zh="通过邮件发送">Send via Email</span>
+                      </a>
+
+                      <button
+                        type="button"
+                        id="dispatch-wechat"
+                        class="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm font-semibold text-navy-900 hover:border-navy-900 transition-colors"
+                      >
+                        <svg class="h-4 w-4 shrink-0 text-[#07C160]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M9 11a6 5 0 1 0 0-10 6 5 0 0 0 0 10z" transform="translate(0 3)" />
+                          <path d="M16 14a5 4 0 1 0 0-8 5 4 0 0 0 0 8z" transform="translate(0 4)" />
+                        </svg>
+                        <span class="lang-fade" data-en="WeChat: Copy Quote &amp; ID" data-zh="微信：复制报价与微信号">WeChat: Copy Quote &amp; ID</span>
+                      </button>
+
+                      <a
+                        id="dispatch-phone"
+                        href="#"
+                        class="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm font-semibold text-navy-900 hover:border-navy-900 transition-colors"
+                      >
+                        <svg class="h-4 w-4 shrink-0 text-safety" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        <span id="dispatch-phone-label" class="font-mono text-xs sm:text-sm tabular-nums">Call Hotline</span>
+                      </a>
+                    </div>
+
+                    <div
+                      id="copy-feedback-toast"
+                      aria-live="polite"
+                      class="mt-3 hidden rounded-lg bg-navy-900 px-3.5 py-2 text-xs font-medium text-glassblue"
+                    ></div>
+                  </div>
+
+                  <div class="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-slate-200 pt-4">
+                    <button
+                      type="button"
+                      id="btn-edit-quote"
+                      class="lang-fade text-sm font-semibold text-navy-900 hover:underline"
+                      data-en="← Edit Specifications"
+                      data-zh="← 修改规格参数"
+                    >← Edit Specifications</button>
+                    <button
+                      type="button"
+                      id="btn-reset-quote"
+                      class="lang-fade text-xs font-medium text-slatebrand hover:text-navy-900"
+                      data-en="Start New Quote"
+                      data-zh="清空并重新填写"
+                    >Start New Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Sticky Live Glass Preview & Spec Panel -->
+            <aside class="lg:col-span-5 lg:sticky lg:top-24">
+              <div class="rounded-2xl border border-navy-800 bg-navy-900 p-5 sm:p-6 text-white">
+                <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                  <div>
+                    <p class="lang-fade text-xs font-medium text-glassblue" data-en="Live Scaled Preview" data-zh="实时比例预览">Live Scaled Preview</p>
+                    <h3 id="preview-glass-title" class="mt-0.5 text-base font-semibold text-white">Tempered Glass</h3>
+                  </div>
+                  <div class="text-right font-mono text-xs tabular-nums text-slate-300">
+                    <div id="preview-dim-badge">900 × 2100 mm</div>
+                    <div id="preview-area-badge" class="text-glassblue">1.89 m² total</div>
+                  </div>
+                </div>
+
+                <!-- Dynamic SVG Scaling Viewport -->
+                <div class="mt-4 flex h-64 items-center justify-center rounded-xl border border-white/10 bg-navy-950/70 p-4">
+                  <svg id="live-preview-svg" viewBox="0 0 320 220" class="h-full w-full" aria-label="Live scaled glass dimensions preview">
+                    <defs>
+                      <linearGradient id="previewPaneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#7FD1FF" stop-opacity="0.35" />
+                        <stop offset="55%" stop-color="#FFFFFF" stop-opacity="0.14" />
+                        <stop offset="100%" stop-color="#7FD1FF" stop-opacity="0.08" />
+                      </linearGradient>
+                    </defs>
+                    <!-- Subtle CAD Grid -->
+                    <g stroke="rgba(127,209,255,0.08)" stroke-width="1">
+                      <line x1="0" y1="55" x2="320" y2="55" />
+                      <line x1="0" y1="110" x2="320" y2="110" />
+                      <line x1="0" y1="165" x2="320" y2="165" />
+                      <line x1="80" y1="0" x2="80" y2="220" />
+                      <line x1="160" y1="0" x2="160" y2="220" />
+                      <line x1="240" y1="0" x2="240" y2="220" />
+                    </g>
+
+                    <!-- Dynamic Scaled Glass Rectangle -->
+                    <rect
+                      id="svg-pane-shadow"
+                      x="114"
+                      y="39"
+                      width="96"
+                      height="146"
+                      rx="2"
+                      fill="rgba(127,209,255,0.12)"
+                      style="transition: all 220ms cubic-bezier(0.16, 1, 0.3, 1)"
+                    />
+                    <rect
+                      id="svg-pane-rect"
+                      x="110"
+                      y="35"
+                      width="96"
+                      height="146"
+                      rx="2"
+                      fill="url(#previewPaneGrad)"
+                      stroke="#7FD1FF"
+                      stroke-width="1.8"
+                      style="transition: all 220ms cubic-bezier(0.16, 1, 0.3, 1)"
+                    />
+                    <!-- Dynamic Hole Dots Group -->
+                    <g id="svg-holes-layer"></g>
+
+                    <!-- Width Label -->
+                    <text
+                      id="svg-width-label"
+                      x="160"
+                      y="22"
+                      text-anchor="middle"
+                      fill="#FF7A1A"
+                      font-family="JetBrains Mono, monospace"
+                      font-size="11"
+                    >W: 900 mm</text>
+
+                    <!-- Height Label -->
+                    <text
+                      id="svg-height-label"
+                      x="160"
+                      y="206"
+                      text-anchor="middle"
+                      fill="#7FD1FF"
+                      font-family="JetBrains Mono, monospace"
+                      font-size="11"
+                    >H: 2100 mm · Qty: 1</text>
+                  </svg>
+                </div>
+
+                <!-- Live Specification Readout List -->
+                <dl class="mt-4 divide-y divide-white/10 text-xs">
+                  <div class="flex items-center justify-between py-2.5">
+                    <dt class="lang-fade text-slate-300" data-en="Thickness" data-zh="玻璃厚度">Thickness</dt>
+                    <dd id="preview-thickness" class="font-mono font-semibold text-white tabular-nums">10 mm</dd>
+                  </div>
+                  <div class="flex items-center justify-between py-2.5">
+                    <dt class="lang-fade text-slate-300" data-en="Edge Finish" data-zh="磨边工艺">Edge Finish</dt>
+                    <dd id="preview-edge" class="font-medium text-white">Flat Polish</dd>
+                  </div>
+                  <div class="flex items-center justify-between py-2.5">
+                    <dt class="lang-fade text-slate-300" data-en="Holes / Cutouts" data-zh="打孔 / 开缺">Holes / Cutouts</dt>
+                    <dd id="preview-holes" class="font-mono text-white tabular-nums">0</dd>
+                  </div>
+                  <div class="flex items-center justify-between py-2.5">
+                    <dt class="lang-fade text-slate-300" data-en="Site Photo" data-zh="现场照片">Site Photo</dt>
+                    <dd id="preview-photo-status" class="text-slate-300">Not attached</dd>
+                  </div>
+                  <div class="flex items-center justify-between py-2.5">
+                    <dt class="lang-fade text-slate-300" data-en="Quote Language" data-zh="报价语言">Quote Language</dt>
+                    <dd id="preview-quote-lang" class="font-mono text-glassblue">EN</dd>
+                  </div>
+                </dl>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 3B. INTERACTIVE 3D GLASS ANATOMY ==================== -->
+      <section id="anatomy" class="bg-navy-900 text-white border-y border-navy-800 py-16 sm:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="gsap-blur-reveal flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p
+                class="lang-fade text-xs font-semibold tracking-wide text-glassblue"
+                data-en="Interactive 3D Inspection"
+                data-zh="交互式 3D 结构透视"
+              >Interactive 3D Inspection</p>
+              <h2
+                class="lang-fade mt-1 text-3xl font-bold tracking-tight text-white sm:text-4xl"
+                data-en="Glass Anatomy &amp; Edge Engineering"
+                data-zh="钢化玻璃结构与精磨边型解析"
+              >Glass Anatomy &amp; Edge Engineering</h2>
+            </div>
+            <p
+              class="lang-fade max-w-xl text-xs sm:text-sm text-slate-300"
+              data-en="Drag to orbit 360° around a live tempered glass pane. Switch thicknesses (5–12 mm) and edge finishes to inspect the physical profile."
+              data-zh="鼠标或手指拖拽即可 360° 旋转观察玻璃原片与磨边工艺，切换厚度（5–12 mm）与边型实时对比立体切面。"
+            >
+              Drag to orbit 360° around a live tempered glass pane. Switch thicknesses (5–12 mm) and edge finishes to inspect the physical profile.
+            </p>
+          </div>
+
+          <div class="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center">
+            <!-- 3D Viewport + Tracked Floating Annotations -->
+            <div class="lg:col-span-8">
+              <div class="relative overflow-hidden rounded-2xl border border-glassblue/25 bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800">
+                <div id="anatomy-3d-host" class="relative z-10 h-[360px] sm:h-[440px] lg:h-[480px] w-full pointer-events-auto touch-none select-none"></div>
+
+                <!-- 3D-Projected Floating Annotations Overlay (solid rgba for WebGL perf) -->
+                <div id="anatomy-pins-layer" class="pointer-events-none absolute inset-0 z-20 overflow-hidden"></div>
+
+                <!-- Static Fallback if WebGL unavailable -->
+                <div id="anatomy-static-fallback" class="hidden p-8 text-center">
+                  <p class="lang-fade text-sm text-slate-300" data-en="Interactive 3D view requires WebGL. Inspect the 2D edge profiles below." data-zh="当前浏览器未开启 WebGL，请在下方查看 2D 磨边剖面图。">
+                    Interactive 3D view requires WebGL. Inspect the 2D edge profiles below.
+                  </p>
+                </div>
+
+                <!-- Bottom Viewport Helper Strip -->
+                <div class="flex flex-wrap items-center justify-between gap-2 border-t border-white/10 bg-[#07121E]/85 px-4 py-2.5 text-xs text-slate-300">
+                  <span class="lang-fade" data-en="Drag to rotate · Scroll to zoom" data-zh="拖拽旋转 · 滚轮缩放">Drag to rotate · Scroll to zoom</span>
+                  <div class="flex items-center gap-3">
+                    <button
+                      type="button"
+                      id="anatomy-toggle-pins"
+                      aria-pressed="true"
+                      class="lang-fade font-medium text-glassblue hover:underline"
+                      data-en="Toggle Labels"
+                      data-zh="显隐标注"
+                    >Toggle Labels</button>
+                    <button
+                      type="button"
+                      id="anatomy-reset-view"
+                      class="lang-fade font-medium text-slate-200 hover:text-white"
+                      data-en="Reset Camera"
+                      data-zh="重置视角"
+                    >Reset Camera</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Interactive Anatomy Controls -->
+            <div class="lg:col-span-4 space-y-6 rounded-2xl border border-white/15 bg-navy-800/45 p-6">
+              <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                <span class="lang-fade text-xs font-semibold text-slate-300" data-en="Live Thickness Caliper" data-zh="实时厚度卡尺读数">Live Thickness Caliper</span>
+                <span id="anatomy-thickness-readout" class="font-mono text-xl font-bold text-glassblue tabular-nums">10.0 mm</span>
+              </div>
+
+              <div>
+                <span class="lang-fade block text-xs font-semibold text-slate-200" data-en="Select Glass Thickness" data-zh="切换玻璃厚度">Select Glass Thickness</span>
+                <div class="mt-2.5 grid grid-cols-5 gap-2">
+                  <button type="button" data-anatomy-thickness="5">5mm</button>
+                  <button type="button" data-anatomy-thickness="6">6mm</button>
+                  <button type="button" data-anatomy-thickness="8">8mm</button>
+                  <button type="button" data-anatomy-thickness="10">10mm</button>
+                  <button type="button" data-anatomy-thickness="12">12mm</button>
+                </div>
+              </div>
+
+              <div>
+                <span class="lang-fade block text-xs font-semibold text-slate-200" data-en="Select 3D Edge Profile" data-zh="切换 3D 磨边剖面">Select 3D Edge Profile</span>
+                <div class="mt-2.5 grid grid-cols-3 gap-2">
+                  <button type="button" data-anatomy-edge="flat" class="lang-fade" data-en="Flat Polish" data-zh="平边精磨">Flat Polish</button>
+                  <button type="button" data-anatomy-edge="pencil" class="lang-fade" data-en="Pencil" data-zh="圆边">Pencil</button>
+                  <button type="button" data-anatomy-edge="bevel" class="lang-fade" data-en="Bevel" data-zh="斜边">Bevel</button>
+                </div>
+              </div>
+
+              <div class="rounded-xl border border-white/10 bg-navy-950/60 p-4 text-xs leading-relaxed text-slate-300">
+                <p class="lang-fade" data-en="Thermal tempering locks outer surfaces in compression while keeping internal tension balanced—delivering 4–5× higher impact resistance than annealed float glass." data-zh="钢化热处理在玻璃表面形成均匀压应力层，抗冲击强度达到普通浮法玻璃的 4–5 倍，同时保留高透光率与淡青浮法边质感。">
+                  Thermal tempering locks outer surfaces in compression while keeping internal tension balanced—delivering 4–5× higher impact resistance than annealed float glass.
+                </p>
+              </div>
+
+              <a
+                id="anatomy-quote-cta"
+                href="#quote"
+                data-magnetic
+                class="shine-sweep lang-fade flex w-full items-center justify-center rounded-lg bg-safety px-5 py-3 text-sm font-semibold text-white hover:bg-safetyhover transition-colors"
+                data-en="Quote With These Specs →"
+                data-zh="按此规格立即报价 →"
+              >Quote With These Specs →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 4. TECHNICAL SPECS & EDGE PROFILES ==================== -->
+      <section id="specs" class="bg-frost py-16 sm:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="gsap-blur-reveal flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p
+                class="lang-fade text-xs font-semibold tracking-wide text-slatebrand"
+                data-en="03 · Engineering Reference"
+                data-zh="03 · 工程技术参考"
+              >03 · Engineering Reference</p>
+              <h2
+                class="lang-fade mt-1 text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl"
+                data-en="Thickness Specs &amp; Edge Profiles"
+                data-zh="厚度规格与磨边剖面图"
+              >Thickness Specs &amp; Edge Profiles</h2>
+            </div>
+            <p
+              class="lang-fade max-w-xl text-xs sm:text-sm text-slatebrand"
+              data-en="Reference values below are general fabrication guidelines. Final structural thickness depends on span and mounting hardware."
+              data-zh="以下厚度与适用场景为常规加工参考标准，具体工程厚度需结合跨度与五金承重确定。"
+            >
+              Reference values below are general fabrication guidelines. Final structural thickness depends on span and mounting hardware.
+            </p>
+          </div>
+
+          <!-- Thickness vs Applications Table -->
+          <div class="mt-8 overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
+            <table class="min-w-full divide-y divide-slate-200 text-left text-sm">
+              <thead class="bg-navy-900 text-xs font-semibold text-white">
+                <tr>
+                  <th scope="col" class="lang-fade px-5 py-3.5 whitespace-nowrap" data-en="Thickness" data-zh="厚度">Thickness</th>
+                  <th scope="col" class="lang-fade px-5 py-3.5 whitespace-nowrap" data-en="Tempering / Standard" data-zh="钢化 / 工艺标准">Tempering / Standard</th>
+                  <th scope="col" class="lang-fade px-5 py-3.5" data-en="Typical Applications" data-zh="典型应用场景">Typical Applications</th>
+                  <th scope="col" class="lang-fade px-5 py-3.5 whitespace-nowrap" data-en="Approx. Weight" data-zh="参考自重">Approx. Weight</th>
+                </tr>
+              </thead>
+              <tbody id="specs-table-body" class="divide-y divide-slate-100 text-navy-900"></tbody>
+            </table>
+          </div>
+
+          <!-- Edge Types with Self-Drawing Inline SVG Cross-Section Diagrams -->
+          <div class="mt-10 grid grid-cols-1 gap-5 md:grid-cols-3">
+            <!-- Flat Polish -->
+            <div class="glass-card-light tilt-card rounded-2xl p-6">
+              <div class="flex items-center justify-between">
+                <h3 class="lang-fade text-base font-bold text-navy-900" data-en="Flat Polish Edge" data-zh="平边精磨 (Flat Polish)">Flat Polish Edge</h3>
+                <span class="font-mono text-xs text-slatebrand">90°</span>
+              </div>
+              <div class="my-4 rounded-xl bg-frost p-4">
+                <svg viewBox="0 0 240 80" class="edge-draw-svg w-full" role="img" aria-label="Flat Polish Edge Profile Diagram">
+                  <rect x="20" y="22" width="165" height="36" fill="rgba(127,209,255,0.28)" stroke="#0B1B2B" stroke-width="1.8" />
+                  <line x1="185" y1="22" x2="185" y2="58" stroke="#FF7A1A" stroke-width="3" />
+                  <path d="M179 22 L185 26 M179 58 L185 54" stroke="#0B1B2B" stroke-width="1.2" />
+                  <text x="198" y="44" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A6B7B">90°</text>
+                </svg>
+              </div>
+              <p
+                class="lang-fade text-xs sm:text-sm leading-relaxed text-slatebrand"
+                data-en="Clean 90° machine-polished edge with micro-chamfered arris. Standard for frameless doors, partitions, and exposed edges."
+                data-zh="机械精磨 90° 平直边与微倒角，光泽通透，适用于无框玻璃门、办公隔断及外露边缘。"
+              >Clean 90° machine-polished edge with micro-chamfered arris. Standard for frameless doors, partitions, and exposed edges.</p>
+            </div>
+
+            <!-- Beveled Edge -->
+            <div class="glass-card-light tilt-card rounded-2xl p-6">
+              <div class="flex items-center justify-between">
+                <h3 class="lang-fade text-base font-bold text-navy-900" data-en="Beveled Edge" data-zh="斜边抛光 (Beveled)">Beveled Edge</h3>
+                <span class="font-mono text-xs text-slatebrand">45° / 10–25mm</span>
+              </div>
+              <div class="my-4 rounded-xl bg-frost p-4">
+                <svg viewBox="0 0 240 80" class="edge-draw-svg w-full" role="img" aria-label="Beveled Edge Profile Diagram">
+                  <polygon points="20,22 155,22 185,36 185,58 20,58" fill="rgba(127,209,255,0.28)" stroke="#0B1B2B" stroke-width="1.8" />
+                  <line x1="155" y1="22" x2="185" y2="36" stroke="#FF7A1A" stroke-width="3" />
+                  <text x="194" y="44" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A6B7B">BEVEL</text>
+                </svg>
+              </div>
+              <p
+                class="lang-fade text-xs sm:text-sm leading-relaxed text-slatebrand"
+                data-en="Angled prism cut along the face perimeter for light refraction. Popular on custom wall mirrors and decorative tabletops."
+                data-zh="沿玻璃表面边缘切削抛光斜面，形成折射光边效果，常用于高端镜面及桌面玻璃。"
+              >Angled prism cut along the face perimeter for light refraction. Popular on custom wall mirrors and decorative tabletops.</p>
+            </div>
+
+            <!-- Pencil Edge -->
+            <div class="glass-card-light tilt-card rounded-2xl p-6">
+              <div class="flex items-center justify-between">
+                <h3 class="lang-fade text-base font-bold text-navy-900" data-en="Pencil / Round Edge" data-zh="圆边 / 鸭嘴边 (Pencil)">Pencil / Round Edge</h3>
+                <span class="font-mono text-xs text-slatebrand">C-Radius</span>
+              </div>
+              <div class="my-4 rounded-xl bg-frost p-4">
+                <svg viewBox="0 0 240 80" class="edge-draw-svg w-full" role="img" aria-label="Pencil Round Edge Profile Diagram">
+                  <path d="M20,22 L172,22 C188,22 188,58 172,58 L20,58 Z" fill="rgba(127,209,255,0.28)" stroke="#0B1B2B" stroke-width="1.8" />
+                  <path d="M172,22 C188,22 188,58 172,58" fill="none" stroke="#FF7A1A" stroke-width="3" />
+                  <text x="195" y="44" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A6B7B">R-ARC</text>
+                </svg>
+              </div>
+              <p
+                class="lang-fade text-xs sm:text-sm leading-relaxed text-slatebrand"
+                data-en="Smooth half-round C-profile edge for comfortable touch and safe handling on shelves, dining tops, and shower dividers."
+                data-zh="半圆形平滑 C 型圆边，手感柔和不刮手，适用于玻璃层板、餐桌面及淋浴隔断。"
+              >Smooth half-round C-profile edge for comfortable touch and safe handling on shelves, dining tops, and shower dividers.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 5. APPLICATIONS & PLACEHOLDER PROJECTS GALLERY ==================== -->
+      <section id="applications" class="border-t border-slate-200/80 bg-white py-16 sm:py-20">
+        <div id="projects" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="reveal-item flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p
+                class="lang-fade text-xs font-semibold tracking-wide text-slatebrand"
+                data-en="04 · Applications &amp; Sample Layouts"
+                data-zh="04 · 应用场景与示例方案"
+              >04 · Applications &amp; Sample Layouts</p>
+              <h2
+                class="lang-fade mt-1 text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl"
+                data-en="Residential, Storefronts &amp; Offices"
+                data-zh="住宅、商铺门面与办公空间"
+              >Residential, Storefronts &amp; Offices</h2>
+            </div>
+
+            <!-- Interactive Category Filter Tabs -->
+            <div
+              role="group"
+              aria-label="Filter Applications"
+              class="inline-flex flex-wrap items-center gap-1 rounded-xl bg-frost p-1 border border-slate-200"
+            >
+              <button type="button" data-gallery-filter="all" class="gallery-tab whitespace-nowrap rounded-lg px-3.5 py-2 text-xs font-semibold transition-colors bg-navy-900 text-white" data-en="All" data-zh="全部">All</button>
+              <button type="button" data-gallery-filter="residential" class="gallery-tab whitespace-nowrap rounded-lg px-3.5 py-2 text-xs font-semibold transition-colors text-slatebrand hover:text-navy-900" data-en="Residential" data-zh="住宅空间">Residential</button>
+              <button type="button" data-gallery-filter="commercial" class="gallery-tab whitespace-nowrap rounded-lg px-3.5 py-2 text-xs font-semibold transition-colors text-slatebrand hover:text-navy-900" data-en="Storefronts" data-zh="商铺门面">Storefronts</button>
+              <button type="button" data-gallery-filter="office" class="gallery-tab whitespace-nowrap rounded-lg px-3.5 py-2 text-xs font-semibold transition-colors text-slatebrand hover:text-navy-900" data-en="Offices" data-zh="办公隔断">Offices</button>
+            </div>
+          </div>
+
+          <!-- Masonry-style CSS Columns Gallery (Clearly Marked Placeholder Configurations) -->
+          <div id="gallery-grid" class="mt-10 columns-1 gap-5 sm:columns-2 lg:columns-3 space-y-5"></div>
+        </div>
+      </section>
+
+      <!-- ==================== 6. WHY ATC GLASS (CAPABILITY CARDS) ==================== -->
+      <section class="border-t border-slate-200/80 bg-frost py-16 sm:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="reveal-item max-w-2xl">
+            <p
+              class="lang-fade text-xs font-semibold tracking-wide text-slatebrand"
+              data-en="05 · Processing &amp; Fulfillment"
+              data-zh="05 · 加工与配送能力"
+            >05 · Processing &amp; Fulfillment</p>
+            <h2
+              class="lang-fade mt-1 text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl"
+              data-en="Why Contractors Choose ATC Glass"
+              data-zh="为什么工程客户选择 ATC Glass"
+            >Why Contractors Choose ATC Glass</h2>
+          </div>
+
+          <div id="capabilities-grid" class="reveal-item mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"></div>
+        </div>
+      </section>
+
+      <!-- ==================== 7. CONTACT & GCC PAMPANGA LOCATION ==================== -->
+      <section id="contact" class="border-t border-slate-200 bg-white py-16 sm:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-stretch">
+            <!-- Contact Information & Direct Channels -->
+            <div class="lg:col-span-6 flex flex-col justify-between rounded-2xl border border-slate-200 bg-frost p-6 sm:p-8">
+              <div>
+                <p
+                  class="lang-fade text-xs font-semibold tracking-wide text-slatebrand"
+                  data-en="06 · Visit or Message Our Desk"
+                  data-zh="06 · 门店地址与即时联系"
+                >06 · Visit or Message Our Desk</p>
+                <h2
+                  class="lang-fade mt-1 text-3xl font-bold tracking-tight text-navy-900"
+                  data-en="GCC Pampanga Showroom &amp; Quote Desk"
+                  data-zh="邦板牙 GCC 建材城展厅与报价中心"
+                >GCC Pampanga Showroom &amp; Quote Desk</h2>
+
+                <dl class="mt-6 space-y-4 text-sm">
+                  <div>
+                    <dt class="lang-fade text-xs font-semibold text-slatebrand" data-en="Showroom &amp; Dispatch Address" data-zh="门店地址">Showroom &amp; Dispatch Address</dt>
+                    <dd class="lang-fade mt-1 font-semibold text-navy-900" data-en="Cluster D1, Units 1–3 and 5, Global Construct City (GCC), Pampanga, Philippines" data-zh="菲律宾邦板牙省 Global Construct City (GCC) 建材城 D1 区 1–3 号及 5 号">
+                      Cluster D1, Units 1–3 and 5, Global Construct City (GCC), Pampanga, Philippines
+                    </dd>
+                  </div>
+                  <div>
+                    <dt class="lang-fade text-xs font-semibold text-slatebrand" data-en="Operating Hours" data-zh="营业时间">Operating Hours</dt>
+                    <dd id="contact-hours-text" class="mt-1 font-mono text-xs sm:text-sm text-navy-900"></dd>
+                  </div>
+                </dl>
+
+                <!-- Front-and-center Hotline, WhatsApp, WeChat, Email -->
+                <div class="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  <a
+                    id="contact-phone-link"
+                    href="#"
+                    class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3.5 hover:border-navy-900 transition-colors"
+                  >
+                    <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-navy-900 text-glassblue shrink-0">
+                      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                      </svg>
+                    </span>
+                    <div class="min-w-0">
+                      <div class="lang-fade text-xs text-slatebrand" data-en="Phone Hotline" data-zh="客服热线">Phone Hotline</div>
+                      <div id="contact-phone-display" class="truncate font-mono text-xs sm:text-sm font-semibold text-navy-900 tabular-nums"></div>
+                    </div>
+                  </a>
+
+                  <button
+                    type="button"
+                    id="contact-wechat-copy"
+                    class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3.5 text-left hover:border-navy-900 transition-colors"
+                  >
+                    <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#07C160]/15 text-[#07C160] shrink-0">
+                      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <rect x="4" y="4" width="16" height="16" rx="3" />
+                        <path d="M8 10h8M8 14h5" />
+                      </svg>
+                    </span>
+                    <div class="min-w-0">
+                      <div class="lang-fade text-xs text-slatebrand" data-en="WeChat ID (Tap to Copy)" data-zh="微信号（点击复制）">WeChat ID (Tap to Copy)</div>
+                      <div id="contact-wechat-display" class="truncate font-mono text-xs sm:text-sm font-semibold text-navy-900"></div>
+                    </div>
+                  </button>
+
+                  <a
+                    id="contact-whatsapp-link"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3.5 hover:border-navy-900 transition-colors"
+                  >
+                    <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#168A49]/15 text-[#168A49] shrink-0">
+                      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                      </svg>
+                    </span>
+                    <div class="min-w-0">
+                      <div class="lang-fade text-xs text-slatebrand" data-en="WhatsApp Desk" data-zh="WhatsApp 报价">WhatsApp Desk</div>
+                      <div id="contact-whatsapp-display" class="truncate font-mono text-xs sm:text-sm font-semibold text-navy-900 tabular-nums"></div>
+                    </div>
+                  </a>
+
+                  <a
+                    id="contact-email-link"
+                    href="#"
+                    class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3.5 hover:border-navy-900 transition-colors"
+                  >
+                    <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-navy-900/10 text-navy-900 shrink-0">
+                      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <path d="M3 7l9 6 9-6" />
+                      </svg>
+                    </span>
+                    <div class="min-w-0">
+                      <div class="lang-fade text-xs text-slatebrand" data-en="Email Quotations" data-zh="报价邮箱">Email Quotations</div>
+                      <div id="contact-email-display" class="truncate font-mono text-xs sm:text-sm font-semibold text-navy-900"></div>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  id="contact-toast"
+                  aria-live="polite"
+                  class="mt-3 hidden rounded-lg bg-navy-900 px-3.5 py-2 text-xs font-medium text-glassblue"
+                ></div>
+              </div>
+            </div>
+
+            <!-- SVG/CSS Directional Site Map Placeholder for GCC Cluster D1 -->
+            <div class="lg:col-span-6 flex flex-col justify-between rounded-2xl border border-navy-800 bg-navy-900 p-6 text-white">
+              <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                <div>
+                  <span class="lang-fade text-xs font-semibold text-glassblue" data-en="Site Locator Schematic (Map Placeholder)" data-zh="园区位置示意（地图占位图）">Site Locator Schematic (Map Placeholder)</span>
+                  <h3 class="mt-0.5 text-base font-semibold text-white">Global Construct City · Cluster D1</h3>
+                </div>
+                <span class="font-mono text-xs text-slate-300">Units 1–3 &amp; 5</span>
+              </div>
+
+              <div class="my-4 flex-1 flex items-center justify-center rounded-xl border border-white/10 bg-navy-950/75 p-4">
+                <svg viewBox="0 0 460 260" class="w-full" role="img" aria-label="Global Construct City Cluster D1 Units 1-3 and 5 Map Schematic">
+                  <!-- Main Access Road -->
+                  <rect x="20" y="205" width="420" height="32" rx="4" fill="#12283E" stroke="rgba(127,209,255,0.2)" />
+                  <line x1="36" y1="221" x2="424" y2="221" stroke="rgba(255,255,255,0.25)" stroke-dasharray="10 8" stroke-width="1.5" />
+                  <text x="230" y="225" text-anchor="middle" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="10">
+                    GCC MAIN ACCESS DRIVE · PAMPANGA
+                  </text>
+
+                  <!-- Surrounding Clusters -->
+                  <rect x="28" y="34" width="110" height="65" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.12)" />
+                  <text x="83" y="70" text-anchor="middle" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="11">CLUSTER C</text>
+
+                  <rect x="322" y="34" width="110" height="65" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.12)" />
+                  <text x="377" y="70" text-anchor="middle" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="11">CLUSTER D2</text>
+
+                  <!-- Cluster D1 Highlighted Block -->
+                  <rect x="155" y="30" width="150" height="150" rx="8" fill="rgba(127,209,255,0.09)" stroke="#7FD1FF" stroke-width="1.5" />
+                  <text x="230" y="50" text-anchor="middle" fill="#7FD1FF" font-family="JetBrains Mono, monospace" font-size="11" font-weight="600">
+                    CLUSTER D1
+                  </text>
+
+                  <!-- Units 1, 2, 3, 4, 5 -->
+                  <rect x="169" y="64" width="38" height="44" rx="4" fill="#FF7A1A" />
+                  <text x="188" y="90" text-anchor="middle" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="10" font-weight="600">U1</text>
+
+                  <rect x="211" y="64" width="38" height="44" rx="4" fill="#FF7A1A" />
+                  <text x="230" y="90" text-anchor="middle" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="10" font-weight="600">U2</text>
+
+                  <rect x="253" y="64" width="38" height="44" rx="4" fill="#FF7A1A" />
+                  <text x="272" y="90" text-anchor="middle" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="10" font-weight="600">U3</text>
+
+                  <rect x="169" y="118" width="56" height="44" rx="4" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)" />
+                  <text x="197" y="144" text-anchor="middle" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="10">U4</text>
+
+                  <rect x="233" y="118" width="58" height="44" rx="4" fill="#FF7A1A" />
+                  <text x="262" y="144" text-anchor="middle" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="10" font-weight="600">U5</text>
+                </svg>
+              </div>
+
+              <div class="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-300">
+                <span class="lang-fade" data-en="Truck loading bay &amp; pickup access in Cluster D1" data-zh="D1 区支持货车装卸与现场自提">Truck loading bay &amp; pickup access in Cluster D1</span>
+                <a href="#quote" class="lang-fade font-semibold text-glassblue hover:underline" data-en="Start Quote First →" data-zh="先在线提交报价 →">Start Quote First →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== 8. FOOTER ==================== -->
+    <footer class="bg-navy-950 text-slate-300 border-t border-white/10">
+      <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-12">
+          <div class="md:col-span-5">
+            <div class="text-lg font-bold tracking-tight text-white">ATC Glass</div>
+            <p
+              class="lang-fade mt-2 max-w-sm text-xs sm:text-sm leading-relaxed text-slate-400"
+              data-en="Custom-cut tempered and architectural glass supplier serving Pampanga and Central Luzon from Global Construct City (GCC), Cluster D1, Units 1–3 and 5."
+              data-zh="位于菲律宾邦板牙省 GCC 建材城 D1 区 1–3 号及 5 号，面向邦板牙及中吕宋地区提供定制钢化与建筑玻璃加工服务。"
+            >
+              Custom-cut tempered and architectural glass supplier serving Pampanga and Central Luzon from Global Construct City (GCC), Cluster D1, Units 1–3 and 5.
+            </p>
+            <p id="footer-permit-text" class="mt-3 font-mono text-xs text-slate-400"></p>
+          </div>
+
+          <div class="md:col-span-3">
+            <h3 class="lang-fade text-xs font-semibold text-white" data-en="Navigation" data-zh="页面导航">Navigation</h3>
+            <ul class="mt-3 space-y-2 text-xs sm:text-sm">
+              <li><a href="#products" class="lang-fade hover:text-glassblue transition-colors" data-en="Products" data-zh="产品中心">Products</a></li>
+              <li><a href="#quote" class="lang-fade hover:text-glassblue transition-colors" data-en="Smart Quote Builder" data-zh="智能报价单">Smart Quote Builder</a></li>
+              <li><a href="#specs" class="lang-fade hover:text-glassblue transition-colors" data-en="Specs &amp; Edge Types" data-zh="技术规格与磨边">Specs &amp; Edge Types</a></li>
+              <li><a href="#projects" class="lang-fade hover:text-glassblue transition-colors" data-en="Applications Gallery" data-zh="应用案例">Applications Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="md:col-span-4">
+            <h3 class="lang-fade text-xs font-semibold text-white" data-en="Direct Channels" data-zh="联系渠道">Direct Channels</h3>
+            <ul class="mt-3 space-y-2 text-xs sm:text-sm font-mono">
+              <li id="footer-phone"></li>
+              <li id="footer-whatsapp"></li>
+              <li id="footer-wechat"></li>
+              <li id="footer-email"></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-10 flex flex-col gap-2 border-t border-white/10 pt-6 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+          <span class="lang-fade" data-en="© 2026 ATC Glass · Pampanga, Philippines" data-zh="© 2026 ATC Glass · 菲律宾邦板牙省">© 2026 ATC Glass · Pampanga, Philippines</span>
+          <span class="lang-fade" data-en="All sample projects &amp; permit fields marked as placeholders until finalized." data-zh="标有占位标识的案例、营业时间及执照号可随时在配置中替换。">All sample projects &amp; permit fields marked as placeholders until finalized.</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==================== SINGLE EDITABLE COPY + CONFIG + VANILLA JS ==================== -->
+    <script>
+      /**
+       * EDITABLE SITE CONFIGURATION & BILINGUAL COPY OBJECT
+       * Update phone numbers, WhatsApp, WeChat ID, email, response SLA, hours, and permit placeholder here.
+       */
+      const COPY = {
+        config: {
+          phoneDisplay: '+63 9XX XXX XXXX [Hotline Placeholder]',
+          phoneHref: 'tel:+639000000000',
+          whatsappDisplay: '+63 9XX XXX XXXX [WhatsApp Placeholder]',
+          whatsappNumber: '639000000000', // digits only for wa.me
+          wechatId: 'ATC_GLASS_GCC [Placeholder]',
+          email: 'quotes@atcglass-placeholder.ph',
+          hoursEn: 'Mon–Sat · 08:00–17:30 [Hours Placeholder]',
+          hoursZh: '周一至周六 · 08:00–17:30 [营业时间占位]',
+          slaHours: '2 hours',
+          slaHoursZh: '2 小时',
+          permitEn: 'Business Permit / DTI No.: [Permit Placeholder]',
+          permitZh: '营业执照 / DTI 编号：[执照编号占位]',
+        },
+
+        steps: [
+          { id: 1, en: 'Glass Type', zh: '玻璃类型', shortEn: 'Type', shortZh: '类型' },
+          { id: 2, en: 'Dimensions', zh: '尺寸数量', shortEn: 'Size', shortZh: '尺寸' },
+          { id: 3, en: 'Thickness & Edge', zh: '厚度磨边', shortEn: 'Specs', shortZh: '规格' },
+          { id: 4, en: 'Site Photo', zh: '现场照片', shortEn: 'Photo', shortZh: '照片' },
+          { id: 5, en: 'Contact Info', zh: '联系方式', shortEn: 'Contact', shortZh: '联系' },
+        ],
+
+        products: [
+          {
+            id: 'tempered',
+            en: 'Tempered Glass',
+            zh: '钢化玻璃',
+            metaEn: '5–12 mm · Safety Heat-Treated',
+            metaZh: '5–12 mm · 热处理安全玻璃',
+            descEn: 'High-strength thermal tempered panes engineered to crumble safely if broken. Ideal for doors and partitions.',
+            descZh: '高强度钢化安全玻璃，抗冲击耐温差，适用于无框玻璃门、隔断与采光窗。',
+            defaultThickness: 10,
+            svg: '<rect x="18" y="12" width="44" height="56" rx="2" fill="rgba(127,209,255,0.28)" stroke="#0B1B2B" stroke-width="2"/><line x1="25" y1="20" x2="38" y2="33" stroke="#0B1B2B" stroke-width="1.6"/><line x1="25" y1="30" x2="32" y2="37" stroke="#0B1B2B" stroke-width="1.6"/>',
+          },
+          {
+            id: 'laminated',
+            en: 'Laminated Glass',
+            zh: '夹胶安全玻璃',
+            metaEn: 'PVB Interlayer · Acoustic & Security',
+            metaZh: 'PVB 胶片 · 隔音防坠落',
+            descEn: 'Dual panes bonded with a tough interlayer that holds fragments in place on impact while reducing street noise.',
+            descZh: '双层玻璃中间夹强韧 PVB 胶膜，破碎不飞溅且兼顾隔音降噪，适合门面及采光顶。',
+            defaultThickness: 12,
+            svg: '<rect x="15" y="14" width="38" height="52" rx="2" fill="rgba(127,209,255,0.22)" stroke="#0B1B2B" stroke-width="1.8"/><rect x="27" y="18" width="38" height="52" rx="2" fill="rgba(127,209,255,0.34)" stroke="#0B1B2B" stroke-width="1.8"/><line x1="21" y1="16" x2="21" y2="66" stroke="#FF7A1A" stroke-width="1.8"/>',
+          },
+          {
+            id: 'frosted',
+            en: 'Frosted Glass',
+            zh: '磨砂 / 玉砂玻璃',
+            metaEn: 'Acid-Etched / Sandblasted Privacy',
+            metaZh: '酸洗 / 喷砂工艺 · 透光不透影',
+            descEn: 'Diffuses natural light evenly while obscuring direct sightlines for bathrooms, clinics, and office meeting rooms.',
+            descZh: '柔和散射自然光线同时保护隐私，常用于卫生间门窗、诊所及办公会议室隔断。',
+            defaultThickness: 8,
+            svg: '<rect x="18" y="12" width="44" height="56" rx="2" fill="rgba(90,107,123,0.18)" stroke="#0B1B2B" stroke-width="2"/><g stroke="#5A6B7B" stroke-width="1.4" stroke-dasharray="2 3"><line x1="26" y1="24" x2="54" y2="24"/><line x1="26" y1="36" x2="54" y2="36"/><line x1="26" y1="48" x2="54" y2="48"/></g>',
+          },
+          {
+            id: 'mirrors',
+            en: 'Custom Mirrors',
+            zh: '定制镜面玻璃',
+            metaEn: '5–6 mm · Silver / Copper-Free',
+            metaZh: '5–6 mm · 高清无铜防潮镜',
+            descEn: 'Distortion-free architectural mirrors custom cut with polished or beveled edges for vanities, gyms, and salons.',
+            descZh: '高清不变形定制墙镜，可选平边或斜边抛光，适用于卫浴镜、健身房及商业空间。',
+            defaultThickness: 5,
+            svg: '<rect x="18" y="12" width="44" height="56" rx="2" fill="rgba(127,209,255,0.2)" stroke="#0B1B2B" stroke-width="2"/><rect x="23" y="17" width="34" height="46" fill="none" stroke="#5A6B7B" stroke-width="1" stroke-dasharray="3 2"/><line x1="26" y1="24" x2="40" y2="18" stroke="#0B1B2B" stroke-width="1.5"/>',
+          },
+          {
+            id: 'shower',
+            en: 'Shower Enclosures',
+            zh: '定制淋浴房玻璃',
+            metaEn: '8–10 mm · Cutouts for Hinges',
+            metaZh: '8–10 mm · 含合页及拉手开孔',
+            descEn: 'Custom-measured swinging or sliding tempered shower panels with precise hinge notches and handle drillings.',
+            descZh: '按卫生间现场实测定制平开或推拉钢化淋浴隔断，含合页开缺与拉手打孔加工。',
+            defaultThickness: 10,
+            svg: '<rect x="16" y="12" width="24" height="56" fill="rgba(127,209,255,0.28)" stroke="#0B1B2B" stroke-width="1.8"/><rect x="40" y="12" width="24" height="56" fill="rgba(127,209,255,0.14)" stroke="#0B1B2B" stroke-width="1.8"/><circle cx="35" cy="40" r="2" fill="#FF7A1A"/>',
+          },
+          {
+            id: 'railings',
+            en: 'Glass Railings',
+            zh: '玻璃护栏 / 扶手',
+            metaEn: '10–12 mm · Stairs & Balconies',
+            metaZh: '10–12 mm · 楼梯与阳台防护',
+            descEn: 'Heavy-duty tempered or laminated balustrade panels for staircases, mezzanines, and exterior balconies.',
+            descZh: '厚实耐冲击的钢化或夹胶护栏玻璃，适用于室内楼梯、跃层挑空及室外阳台围护。',
+            defaultThickness: 12,
+            svg: '<polygon points="14,52 66,26 66,56 14,68" fill="rgba(127,209,255,0.3)" stroke="#0B1B2B" stroke-width="1.8"/><line x1="12" y1="48" x2="68" y2="21" stroke="#FF7A1A" stroke-width="2.4"/>',
+          },
+          {
+            id: 'storefront',
+            en: 'Storefront Glazing',
+            zh: '商铺门面玻璃幕墙',
+            metaEn: '10–12 mm · Retail Facades & Doors',
+            metaZh: '10–12 mm · 临街店面与地弹簧门',
+            descEn: 'Large-format clear tempered panels and patch-fitted entry doors built for commercial retail and showrooms.',
+            descZh: '大版面高透光临街商铺玻璃门面及地弹簧对开门，满足各类商业店铺与展厅需求。',
+            defaultThickness: 12,
+            svg: '<rect x="12" y="16" width="56" height="48" fill="rgba(127,209,255,0.22)" stroke="#0B1B2B" stroke-width="1.8"/><line x1="30" y1="16" x2="30" y2="64" stroke="#0B1B2B" stroke-width="1.5"/><line x1="50" y1="16" x2="50" y2="64" stroke="#0B1B2B" stroke-width="1.5"/><rect x="34" y="34" width="12" height="30" fill="rgba(255,122,26,0.16)" stroke="#FF7A1A" stroke-width="1.4"/>',
+          },
+        ],
+
+        thicknesses: [
+          {
+            mm: 5,
+            stdEn: 'Annealed / Light Tempered [Spec Placeholder]',
+            stdZh: '常规镜片 / 薄型钢化 [标准占位]',
+            appEn: 'Wall mirrors, cabinet inserts, small interior sliding windows',
+            appZh: '墙面装饰镜、柜门玻璃、小型室内推拉窗',
+            weight: '~12.5 kg/m²',
+          },
+          {
+            mm: 6,
+            stdEn: 'Tempered Safety [Spec Placeholder]',
+            stdZh: '钢化安全玻璃 [标准占位]',
+            appEn: 'Framed windows, office transom panels, tabletop overlays',
+            appZh: '有框铝合金窗、办公上亮玻璃、桌面保护玻璃',
+            weight: '~15.0 kg/m²',
+          },
+          {
+            mm: 8,
+            stdEn: 'Tempered Safety [Spec Placeholder]',
+            stdZh: '钢化安全玻璃 [标准占位]',
+            appEn: 'Fixed shower partitions, frosted room dividers, shelving',
+            appZh: '固定式淋浴隔断、磨砂室内隔断、承重层板',
+            weight: '~20.0 kg/m²',
+          },
+          {
+            mm: 10,
+            stdEn: 'Heavy Tempered [Spec Placeholder]',
+            stdZh: '加厚钢化玻璃 [标准占位]',
+            appEn: 'Frameless shower doors, office glass walls, standard shop fronts',
+            appZh: '无框淋浴房门、高隔断玻璃墙、常规商铺门面',
+            weight: '~25.0 kg/m²',
+          },
+          {
+            mm: 12,
+            stdEn: 'Heavy Tempered / Laminated [Spec Placeholder]',
+            stdZh: '重型钢化 / 夹胶玻璃 [标准占位]',
+            appEn: 'Tall storefront facades, patch-fitted entry doors, glass railings',
+            appZh: '大型临街幕墙、地弹簧无框大门、楼梯阳台护栏',
+            weight: '~30.0 kg/m²',
+          },
+        ],
+
+        edges: [
+          {
+            id: 'flat',
+            en: 'Flat Polish',
+            zh: '平边精磨',
+            svg: '<svg viewBox="0 0 80 34" class="h-8 w-20"><rect x="4" y="7" width="54" height="20" fill="rgba(127,209,255,0.28)" stroke="#0B1B2B" stroke-width="1.6"/><line x1="58" y1="7" x2="58" y2="27" stroke="#FF7A1A" stroke-width="2.8"/></svg>',
+          },
+          {
+            id: 'beveled',
+            en: 'Beveled',
+            zh: '斜边抛光',
+            svg: '<svg viewBox="0 0 80 34" class="h-8 w-20"><polygon points="4,7 44,7 58,15 58,27 4,27" fill="rgba(127,209,255,0.28)" stroke="#0B1B2B" stroke-width="1.6"/><line x1="44" y1="7" x2="58" y2="15" stroke="#FF7A1A" stroke-width="2.8"/></svg>',
+          },
+          {
+            id: 'pencil',
+            en: 'Pencil Edge',
+            zh: '圆边 / 鸭嘴边',
+            svg: '<svg viewBox="0 0 80 34" class="h-8 w-20"><path d="M4,7 L50,7 C62,7 62,27 50,27 L4,27 Z" fill="rgba(127,209,255,0.28)" stroke="#0B1B2B" stroke-width="1.6"/><path d="M50,7 C62,7 62,27 50,27" fill="none" stroke="#FF7A1A" stroke-width="2.8"/></svg>',
+          },
+        ],
+
+        gallery: [
+          {
+            cat: 'residential',
+            catEn: 'Residential',
+            catZh: '住宅空间',
+            titleEn: 'Frameless Corner Shower Enclosure',
+            titleZh: '无框转角淋浴房配置',
+            spec: '10 mm Tempered · Flat Polish · [Sample Placeholder]',
+            aspectClass: 'h-56',
+            accentColor: '#7FD1FF',
+            svg: '<svg viewBox="0 0 260 180" class="h-full w-full"><rect x="24" y="18" width="98" height="144" fill="rgba(127,209,255,0.25)" stroke="#7FD1FF" stroke-width="1.5"/><rect x="122" y="18" width="114" height="144" fill="rgba(255,255,255,0.08)" stroke="#7FD1FF" stroke-width="1.5"/><circle cx="110" cy="92" r="4" fill="#FF7A1A"/><line x1="36" y1="30" x2="66" y2="62" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/></svg>',
+          },
+          {
+            cat: 'commercial',
+            catEn: 'Storefronts',
+            catZh: '商铺门面',
+            titleEn: 'Double-Door Commercial Storefront',
+            titleZh: '商业临街双开玻璃门面',
+            spec: '12 mm Clear Tempered · Patch Fittings · [Sample Placeholder]',
+            aspectClass: 'h-72',
+            accentColor: '#FF7A1A',
+            svg: '<svg viewBox="0 0 260 220" class="h-full w-full"><rect x="16" y="20" width="228" height="180" fill="rgba(127,209,255,0.14)" stroke="#7FD1FF" stroke-width="1.5"/><line x1="86" y1="20" x2="86" y2="200" stroke="#7FD1FF" stroke-width="1.4"/><line x1="174" y1="20" x2="174" y2="200" stroke="#7FD1FF" stroke-width="1.4"/><rect x="86" y="54" width="88" height="146" fill="rgba(127,209,255,0.2)" stroke="#FF7A1A" stroke-width="1.4"/><line x1="130" y1="54" x2="130" y2="200" stroke="#FF7A1A" stroke-width="1.2"/></svg>',
+          },
+          {
+            cat: 'office',
+            catEn: 'Offices',
+            catZh: '办公隔断',
+            titleEn: 'Acoustic Conference Room Partition',
+            titleZh: '会议室隔音玻璃隔断',
+            spec: '10 mm Frosted / Laminated · [Sample Placeholder]',
+            aspectClass: 'h-60',
+            accentColor: '#7FD1FF',
+            svg: '<svg viewBox="0 0 260 180" class="h-full w-full"><rect x="20" y="24" width="70" height="132" fill="rgba(127,209,255,0.22)" stroke="#7FD1FF" stroke-width="1.4"/><rect x="94" y="24" width="72" height="132" fill="rgba(255,255,255,0.12)" stroke="#7FD1FF" stroke-width="1.4"/><rect x="170" y="24" width="70" height="132" fill="rgba(127,209,255,0.22)" stroke="#7FD1FF" stroke-width="1.4"/><rect x="20" y="74" width="220" height="32" fill="rgba(255,255,255,0.12)"/></svg>',
+          },
+          {
+            cat: 'residential',
+            catEn: 'Residential',
+            catZh: '住宅空间',
+            titleEn: 'Staircase & Balcony Balustrade',
+            titleZh: '楼梯与阳台钢化护栏',
+            spec: '12 mm Tempered · Spigot Mount · [Sample Placeholder]',
+            aspectClass: 'h-64',
+            accentColor: '#7FD1FF',
+            svg: '<svg viewBox="0 0 260 180" class="h-full w-full"><polygon points="24,134 236,52 236,126 24,164" fill="rgba(127,209,255,0.25)" stroke="#7FD1FF" stroke-width="1.5"/><line x1="20" y1="128" x2="240" y2="44" stroke="#FF7A1A" stroke-width="3"/><rect x="52" y="148" width="12" height="18" fill="#94A3B8"/><rect x="192" y="114" width="12" height="18" fill="#94A3B8"/></svg>',
+          },
+          {
+            cat: 'commercial',
+            catEn: 'Storefronts',
+            catZh: '商铺门面',
+            titleEn: 'Salon & Fitness Studio Wall Mirrors',
+            titleZh: '美发店与健身房通顶镜墙',
+            spec: '6 mm Beveled Mirror · [Sample Placeholder]',
+            aspectClass: 'h-56',
+            accentColor: '#7FD1FF',
+            svg: '<svg viewBox="0 0 260 180" class="h-full w-full"><rect x="26" y="20" width="64" height="140" fill="rgba(127,209,255,0.18)" stroke="#7FD1FF" stroke-width="1.4"/><rect x="98" y="20" width="64" height="140" fill="rgba(127,209,255,0.24)" stroke="#7FD1FF" stroke-width="1.4"/><rect x="170" y="20" width="64" height="140" fill="rgba(127,209,255,0.18)" stroke="#7FD1FF" stroke-width="1.4"/><line x1="36" y1="36" x2="56" y2="56" stroke="rgba(255,255,255,0.45)" stroke-width="1.5"/></svg>',
+          },
+          {
+            cat: 'office',
+            catEn: 'Offices',
+            catZh: '办公隔断',
+            titleEn: 'Executive Suite Glazing Wall',
+            titleZh: '高管办公室通透玻璃幕墙',
+            spec: '10 mm Clear Tempered · Pencil Edge · [Sample Placeholder]',
+            aspectClass: 'h-64',
+            accentColor: '#7FD1FF',
+            svg: '<svg viewBox="0 0 260 180" class="h-full w-full"><rect x="18" y="22" width="224" height="136" fill="rgba(127,209,255,0.15)" stroke="#7FD1FF" stroke-width="1.5"/><line x1="74" y1="22" x2="74" y2="158" stroke="#7FD1FF" stroke-width="1.2"/><line x1="130" y1="22" x2="130" y2="158" stroke="#7FD1FF" stroke-width="1.2"/><line x1="186" y1="22" x2="186" y2="158" stroke="#7FD1FF" stroke-width="1.2"/></svg>',
+          },
+        ],
+
+        capabilities: [
+          {
+            num: '01',
+            en: 'Precision CNC Cutting',
+            zh: '高精度数控裁切',
+            descEn: 'Custom dimensions from 100 mm to 3600 mm cut accurately to architectural and site measurements.',
+            descZh: '按图纸或现场实测尺寸精密下料，支持 100 mm 至 3600 mm 大板幅定制。',
+            svg: '<path d="M4 20h16M7 16V6l10 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>',
+          },
+          {
+            num: '02',
+            en: 'Controlled Tempering',
+            zh: '稳定钢化热处理',
+            descEn: '5 mm to 12 mm tempered and laminated safety glazing built for commercial traffic and residential safety.',
+            descZh: '覆盖 5–12 mm 钢化与夹胶安全处理，提升抗冲击强度与热稳定性。',
+            svg: '<path d="M12 3l7 4v5c0 4.5-3 8.4-7 9.5C8 20.4 5 16.5 5 12V7l7-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>',
+          },
+          {
+            num: '03',
+            en: 'Edgework &amp; Cutouts',
+            zh: '磨边抛光与精密开孔',
+            descEn: 'Flat polish, beveled, and pencil finishes with pre-drilled hinge notches, handles, and lock cutouts.',
+            descZh: '提供平边、斜边、圆边精磨，及钢化前合页缺口、门锁和拉手孔精密加工。',
+            svg: '<circle cx="12" cy="12" r="7" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="2.2" fill="currentColor"/>',
+          },
+          {
+            num: '04',
+            en: 'Pampanga Delivery &amp; Install',
+            zh: '邦板牙配送与现场安装',
+            descEn: 'Dispatched from GCC Cluster D1 with scheduled site delivery and installation support around Pampanga.',
+            descZh: '从 GCC D1 门店发车，覆盖邦板牙及周边工地配送与专业施工安装对接。',
+            svg: '<rect x="2" y="7" width="13" height="10" rx="1.5" stroke="currentColor" stroke-width="1.8"/><path d="M15 10h4l3 3v4h-7v-7z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7" cy="19" r="1.8" stroke="currentColor" stroke-width="1.6"/><circle cx="18" cy="19" r="1.8" stroke="currentColor" stroke-width="1.6"/>',
+          },
+        ],
+
+        errors: {
+          widthRangeEn: 'Width must be between 100 mm and 3600 mm.',
+          widthRangeZh: '宽度必须在 100 mm 至 3600 mm 之间。',
+          heightRangeEn: 'Height must be between 100 mm and 3600 mm.',
+          heightRangeZh: '高度必须在 100 mm 至 3600 mm 之间。',
+          qtyRangeEn: 'Quantity must be between 1 and 500 pieces.',
+          qtyRangeZh: '数量必须在 1 至 500 片之间。',
+          holesRangeEn: 'Holes / cutouts count must be between 0 and 50.',
+          holesRangeZh: '打孔 / 开缺数量必须在 0 至 50 之间。',
+          photoTypeEn: 'Please choose a valid image file (JPG, PNG, or WEBP).',
+          photoTypeZh: '请选择有效的图片格式（JPG、PNG 或 WEBP）。',
+          photoSizeEn: 'Image must be 10 MB or smaller.',
+          photoSizeZh: '图片大小不能超过 10 MB。',
+          contactReqEn: 'Please fill in your name, mobile number, and project location.',
+          contactReqZh: '请完整填写您的姓名/公司、联系电话及项目地点。',
+          phoneInvalidEn: 'Please enter a valid phone or messaging number (at least 7 digits).',
+          phoneInvalidZh: '请输入有效的联系电话或通讯号码（至少 7 位数字）。',
+        },
+      };
+
+      /* ==================== APPLICATION STATE ==================== */
+      let currentLang = 'en';
+      try {
+        const savedLang = localStorage.getItem('atc_glass_lang');
+        if (savedLang === 'en' || savedLang === 'zh') {
+          currentLang = savedLang;
+        }
+      } catch (e) {
+        currentLang = 'en';
+      }
+
+      const quoteState = {
+        step: 1,
+        glassType: 'tempered',
+        widthMm: 900,
+        heightMm: 2100,
+        quantity: 1,
+        thicknessMm: 10,
+        edgeType: 'flat',
+        holesCount: 0,
+        cutoutNotes: '',
+        photoDataUrl: '',
+        photoName: '',
+        photoMeta: '',
+        contactName: '',
+        contactPhone: '',
+        projectLocation: '',
+        quoteLanguage: currentLang,
+        quoteLanguageManual: false,
+        galleryFilter: 'all',
+        submitted: false,
+      };
+
+      /* ==================== HELPERS ==================== */
+      function t(enText, zhText) {
+        return currentLang === 'zh' ? zhText : enText;
+      }
+
+      function getProductById(id) {
+        return COPY.products.find((p) => p.id === id) || COPY.products[0];
+      }
+
+      function getEdgeById(id) {
+        return COPY.edges.find((e) => e.id === id) || COPY.edges[0];
+      }
+
+      function calcAreaSqm(w, h) {
+        return (w * h) / 1_000_000;
+      }
+
+      function showToast(el, message) {
+        el.textContent = message;
+        el.classList.remove('hidden');
+        clearTimeout(el._timer);
+        el._timer = setTimeout(() => {
+          el.classList.add('hidden');
+        }, 3800);
+      }
+
+      /* ==================== LANGUAGE TOGGLE ENGINE ==================== */
+      function applyLanguage(lang, animate = true) {
+        currentLang = lang === 'zh' ? 'zh' : 'en';
+        document.documentElement.lang = currentLang === 'zh' ? 'zh-CN' : 'en';
+
+        if (!quoteState.quoteLanguageManual) {
+          quoteState.quoteLanguage = currentLang;
+          const targetRadio = document.querySelector(`input[name="quoteLang"][value="${currentLang}"]`);
+          if (targetRadio) targetRadio.checked = true;
+        }
+
+        try {
+          localStorage.setItem('atc_glass_lang', currentLang);
+        } catch (e) {}
+
+        if (animate) {
+          document.body.classList.add('lang-switching');
+          setTimeout(() => {
+            document.body.classList.remove('lang-switching');
+          }, 160);
+        }
+
+        // Update static data-en / data-zh elements
+        document.querySelectorAll('[data-en][data-zh]').forEach((el) => {
+          el.innerHTML = currentLang === 'zh' ? el.getAttribute('data-zh') : el.getAttribute('data-en');
+        });
+
+        // Update header toggle button active states
+        const btnEn = document.getElementById('lang-btn-en');
+        const btnZh = document.getElementById('lang-btn-zh');
+        if (currentLang === 'en') {
+          btnEn.className = 'whitespace-nowrap shrink-0 rounded-md px-2.5 py-1.5 bg-glassblue text-navy-950 font-bold transition-colors';
+          btnZh.className = 'whitespace-nowrap shrink-0 rounded-md px-2.5 py-1.5 text-slate-300 hover:text-white transition-colors';
+          btnEn.setAttribute('aria-pressed', 'true');
+          btnZh.setAttribute('aria-pressed', 'false');
+        } else {
+          btnZh.className = 'whitespace-nowrap shrink-0 rounded-md px-2.5 py-1.5 bg-glassblue text-navy-950 font-bold transition-colors';
+          btnEn.className = 'whitespace-nowrap shrink-0 rounded-md px-2.5 py-1.5 text-slate-300 hover:text-white transition-colors';
+          btnZh.setAttribute('aria-pressed', 'true');
+          btnEn.setAttribute('aria-pressed', 'false');
+        }
+
+        // Re-render dynamic blocks
+        renderProducts();
+        renderStepTabs();
+        renderStep1Options();
+        renderThicknessOptions();
+        renderEdgeOptions();
+        renderSpecsTable();
+        renderGallery();
+        renderCapabilities();
+        populateContactInfo();
+        updateLivePreview();
+        updateStepChrome();
+        updateInputPlaceholders();
+
+        if (quoteState.submitted) {
+          renderSummaryView();
+        }
+        window.dispatchEvent(new CustomEvent('atc:langchange', { detail: { lang: currentLang } }));
+      }
+
+      function updateInputPlaceholders() {
+        const notes = document.getElementById('input-notes');
+        const name = document.getElementById('input-name');
+        const loc = document.getElementById('input-location');
+        if (notes) {
+          notes.placeholder = t('e.g., 2 hinge cutouts, 1 handle hole', '例如：2 个合页开缺，1 个拉手孔');
+        }
+        if (name) {
+          name.placeholder = t('e.g., Juan Dela Cruz / Chen Construction', '例如：张先生 / 某某建筑工程公司');
+        }
+        if (loc) {
+          loc.placeholder = t('e.g., Clark Freeport / Angeles City / San Fernando', '例如：Clark 克拉克 / Angeles 天使城 / San Fernando');
+        }
+      }
+
+      /* ==================== RENDERERS ==================== */
+      function renderProducts() {
+        const grid = document.getElementById('products-grid');
+        grid.innerHTML = COPY.products
+          .map((p, idx) => {
+            const spanClass = idx === 0 ? 'sm:col-span-2 lg:col-span-2' : '';
+            return `
+              <article class="glass-card-light tilt-card shine-sweep rounded-2xl p-5 sm:p-6 flex flex-col justify-between ${spanClass}">
+                <div>
+                  <div class="flex items-start justify-between gap-4">
+                    <div>
+                      <div class="text-xs text-slatebrand">${currentLang === 'zh' ? p.metaZh : p.metaEn}</div>
+                      <h3 class="mt-1 text-lg font-bold text-navy-900">${currentLang === 'zh' ? p.zh : p.en}</h3>
+                    </div>
+                    <div class="h-16 w-16 shrink-0 rounded-xl bg-frost border border-slate-200/80 flex items-center justify-center p-1">
+                      <svg viewBox="0 0 80 80" class="h-full w-full" aria-hidden="true">${p.svg}</svg>
+                    </div>
+                  </div>
+                  <p class="mt-3 text-xs sm:text-sm leading-relaxed text-slatebrand">
+                    ${currentLang === 'zh' ? p.descZh : p.descEn}
+                  </p>
+                </div>
+                <div class="mt-5 pt-4 border-t border-slate-200/70 flex items-center justify-between">
+                  <span class="font-mono text-xs text-slatebrand tabular-nums">${t('Default:', '常用厚度:')} ${p.defaultThickness} mm</span>
+                  <button
+                    type="button"
+                    data-select-product="${p.id}"
+                    class="text-xs sm:text-sm font-semibold text-navy-900 hover:text-safety transition-colors"
+                  >
+                    ${t('Quote This Glass →', '定制此玻璃 →')}
+                  </button>
+                </div>
+              </article>
+            `;
+          })
+          .join('');
+      }
+
+      function renderStepTabs() {
+        const container = document.getElementById('quote-step-tabs');
+        container.innerHTML = COPY.steps
+          .map((s) => {
+            const isActive = quoteState.step === s.id;
+            const isDone = s.id < quoteState.step;
+            const btnStyle = isActive
+              ? 'border-navy-900 bg-navy-900 text-white'
+              : isDone
+              ? 'border-emerald-300 bg-emerald-50 text-emerald-900'
+              : 'border-slate-200 bg-white text-slatebrand hover:border-slate-300';
+            return `
+              <button
+                type="button"
+                role="tab"
+                aria-selected="${isActive}"
+                data-jump-step="${s.id}"
+                class="rounded-lg border px-2 py-2 text-center text-xs font-semibold transition-colors whitespace-nowrap truncate ${btnStyle}"
+              >
+                <span class="font-mono">${s.id}.</span> ${currentLang === 'zh' ? s.shortZh : s.shortEn}
+              </button>
+            `;
+          })
+          .join('');
+      }
+
+      function renderStep1Options() {
+        const container = document.getElementById('step1-options');
+        container.innerHTML = COPY.products
+          .map((p) => {
+            const selected = quoteState.glassType === p.id;
+            return `
+              <button
+                type="button"
+                data-step1-pick="${p.id}"
+                aria-pressed="${selected}"
+                class="flex items-center gap-3 rounded-xl border p-3.5 text-left transition-all ${
+                  selected
+                    ? 'border-navy-900 bg-navy-900 text-white shadow-sm'
+                    : 'border-slate-200 bg-white text-navy-900 hover:border-glassblue'
+                }"
+              >
+                <span class="h-11 w-11 shrink-0 rounded-lg ${selected ? 'bg-white/10' : 'bg-frost'} flex items-center justify-center p-1">
+                  <svg viewBox="0 0 80 80" class="h-full w-full" aria-hidden="true">${p.svg}</svg>
+                </span>
+                <span class="min-w-0">
+                  <span class="block truncate text-sm font-semibold">${currentLang === 'zh' ? p.zh : p.en}</span>
+                  <span class="block truncate text-xs ${selected ? 'text-glassblue' : 'text-slatebrand'}">${currentLang === 'zh' ? p.metaZh : p.metaEn}</span>
+                </span>
+              </button>
+            `;
+          })
+          .join('');
+      }
+
+      function renderThicknessOptions() {
+        const container = document.getElementById('thickness-options');
+        container.innerHTML = COPY.thicknesses
+          .map((item) => {
+            const selected = Number(quoteState.thicknessMm) === item.mm;
+            return `
+              <button
+                type="button"
+                data-thickness-pick="${item.mm}"
+                aria-pressed="${selected}"
+                class="rounded-lg border py-2.5 text-center font-mono text-xs sm:text-sm font-semibold tabular-nums transition-colors ${
+                  selected
+                    ? 'border-navy-900 bg-navy-900 text-white'
+                    : 'border-slate-300 bg-white text-navy-900 hover:border-glassblue'
+                }"
+              >
+                ${item.mm}mm
+              </button>
+            `;
+          })
+          .join('');
+      }
+
+      function renderEdgeOptions() {
+        const container = document.getElementById('edge-options');
+        container.innerHTML = COPY.edges
+          .map((edge) => {
+            const selected = quoteState.edgeType === edge.id;
+            return `
+              <button
+                type="button"
+                data-edge-pick="${edge.id}"
+                aria-pressed="${selected}"
+                class="flex flex-col items-start rounded-xl border p-3 text-left transition-colors ${
+                  selected
+                    ? 'border-navy-900 bg-navy-900/5 ring-1 ring-navy-900'
+                    : 'border-slate-300 bg-white hover:border-glassblue'
+                }"
+              >
+                <div class="mb-2 rounded bg-frost px-2 py-1 border border-slate-200/70">${edge.svg}</div>
+                <span class="text-xs sm:text-sm font-semibold text-navy-900">${currentLang === 'zh' ? edge.zh : edge.en}</span>
+              </button>
+            `;
+          })
+          .join('');
+      }
+
+      function renderSpecsTable() {
+        const tbody = document.getElementById('specs-table-body');
+        tbody.innerHTML = COPY.thicknesses
+          .map(
+            (row) => `
+              <tr class="hover:bg-frost/80 transition-colors">
+                <td class="px-5 py-4 font-mono font-semibold text-navy-900 tabular-nums whitespace-nowrap">${row.mm} mm</td>
+                <td class="px-5 py-4 text-xs sm:text-sm text-slatebrand">${currentLang === 'zh' ? row.stdZh : row.stdEn}</td>
+                <td class="px-5 py-4 text-xs sm:text-sm text-navy-900">${currentLang === 'zh' ? row.appZh : row.appEn}</td>
+                <td class="px-5 py-4 font-mono text-xs sm:text-sm text-slatebrand tabular-nums whitespace-nowrap">${row.weight}</td>
+              </tr>
+            `
+          )
+          .join('');
+      }
+
+      function renderGallery() {
+        const grid = document.getElementById('gallery-grid');
+        const filtered =
+          quoteState.galleryFilter === 'all'
+            ? COPY.gallery
+            : COPY.gallery.filter((item) => item.cat === quoteState.galleryFilter);
+
+        grid.innerHTML = filtered
+          .map(
+            (item) => `
+              <figure class="break-inside-avoid rounded-2xl border border-slate-200 bg-frost overflow-hidden">
+                <div class="bg-navy-900 p-5 flex items-center justify-center ${item.aspectClass}">
+                  ${item.svg}
+                </div>
+                <figcaption class="p-4 sm:p-5 bg-white border-t border-slate-200/80">
+                  <div class="text-xs text-slatebrand">${currentLang === 'zh' ? item.catZh : item.catEn}</div>
+                  <div class="mt-1 text-base font-bold text-navy-900">${currentLang === 'zh' ? item.titleZh : item.titleEn}</div>
+                  <div class="mt-1.5 font-mono text-xs text-slatebrand">${item.spec}</div>
+                </figcaption>
+              </figure>
+            `
+          )
+          .join('');
+
+        // Sync active tab styles
+        document.querySelectorAll('.gallery-tab').forEach((btn) => {
+          const active = btn.getAttribute('data-gallery-filter') === quoteState.galleryFilter;
+          btn.className = active
+            ? 'gallery-tab whitespace-nowrap rounded-lg px-3.5 py-2 text-xs font-semibold transition-colors bg-navy-900 text-white'
+            : 'gallery-tab whitespace-nowrap rounded-lg px-3.5 py-2 text-xs font-semibold transition-colors text-slatebrand hover:text-navy-900';
+        });
+        window.dispatchEvent(new CustomEvent('atc:domupdated'));
+      }
+
+      function renderCapabilities() {
+        const grid = document.getElementById('capabilities-grid');
+        grid.innerHTML = COPY.capabilities
+          .map(
+            (cap) => `
+              <div class="glass-card-light tilt-card rounded-2xl p-6">
+                <div class="flex items-center justify-between">
+                  <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-navy-900 text-glassblue">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none">${cap.svg}</svg>
+                  </span>
+                  <span class="font-mono text-xs font-semibold text-slatebrand tabular-nums">${cap.num}</span>
+                </div>
+                <h3 class="mt-4 text-base font-bold text-navy-900">${currentLang === 'zh' ? cap.zh : cap.en}</h3>
+                <p class="mt-2 text-xs sm:text-sm leading-relaxed text-slatebrand">${currentLang === 'zh' ? cap.descZh : cap.descEn}</p>
+              </div>
+            `
+          )
+          .join('');
+      }
+
+      function populateContactInfo() {
+        const c = COPY.config;
+        document.getElementById('contact-hours-text').textContent = currentLang === 'zh' ? c.hoursZh : c.hoursEn;
+        document.getElementById('contact-phone-display').textContent = c.phoneDisplay;
+        document.getElementById('contact-phone-link').href = c.phoneHref;
+        document.getElementById('contact-wechat-display').textContent = c.wechatId;
+        document.getElementById('contact-whatsapp-display').textContent = c.whatsappDisplay;
+        document.getElementById('contact-whatsapp-link').href = `https://wa.me/${c.whatsappNumber}`;
+        document.getElementById('contact-email-display').textContent = c.email;
+        document.getElementById('contact-email-link').href = `mailto:${c.email}`;
+
+        document.getElementById('footer-permit-text').textContent = currentLang === 'zh' ? c.permitZh : c.permitEn;
+        document.getElementById('footer-phone').textContent = `${t('Tel:', '电话:')} ${c.phoneDisplay}`;
+        document.getElementById('footer-whatsapp').textContent = `WhatsApp: ${c.whatsappDisplay}`;
+        document.getElementById('footer-wechat').textContent = `${t('WeChat:', '微信:')} ${c.wechatId}`;
+        document.getElementById('footer-email').textContent = `Email: ${c.email}`;
+      }
+
+      /* ==================== LIVE SVG PREVIEW & AREA CALC ==================== */
+      function updateLivePreview() {
+        const w = Math.min(3600, Math.max(100, Number(quoteState.widthMm) || 900));
+        const h = Math.min(3600, Math.max(100, Number(quoteState.heightMm) || 2100));
+        const qty = Math.min(500, Math.max(1, Number(quoteState.quantity) || 1));
+
+        const singleArea = calcAreaSqm(w, h);
+        const totalArea = singleArea * qty;
+
+        document.getElementById('calc-single-area').textContent = `${singleArea.toFixed(2)} m²`;
+        document.getElementById('calc-total-area').textContent = `${t('Total:', '总计:')} ${totalArea.toFixed(2)} m²`;
+
+        const prod = getProductById(quoteState.glassType);
+        const edge = getEdgeById(quoteState.edgeType);
+
+        document.getElementById('preview-glass-title').textContent = currentLang === 'zh' ? prod.zh : prod.en;
+        document.getElementById('preview-dim-badge').textContent = `${w} × ${h} mm`;
+        document.getElementById('preview-area-badge').textContent = `${totalArea.toFixed(2)} m² (${qty} ${t('pcs', '片')})`;
+        document.getElementById('preview-thickness').textContent = `${quoteState.thicknessMm} mm`;
+        document.getElementById('preview-edge').textContent = currentLang === 'zh' ? edge.zh : edge.en;
+        document.getElementById('preview-holes').textContent = `${quoteState.holesCount}`;
+        document.getElementById('preview-photo-status').textContent = quoteState.photoName
+          ? quoteState.photoName
+          : t('Not attached', '未上传');
+        document.getElementById('preview-quote-lang').textContent = quoteState.quoteLanguage === 'zh' ? '中文 (ZH)' : 'EN';
+
+        // Scale SVG rectangle cleanly within a 220x145 bounding box inside 320x220 viewBox
+        const maxDrawW = 210;
+        const maxDrawH = 140;
+        const ratio = w / h;
+        let rectW, rectH;
+        if (ratio >= maxDrawW / maxDrawH) {
+          rectW = maxDrawW;
+          rectH = Math.max(24, maxDrawW / ratio);
+        } else {
+          rectH = maxDrawH;
+          rectW = Math.max(24, maxDrawH * ratio);
+        }
+        const x = (320 - rectW) / 2;
+        const y = (220 - rectH) / 2;
+
+        const pane = document.getElementById('svg-pane-rect');
+        const shadow = document.getElementById('svg-pane-shadow');
+        pane.setAttribute('x', x.toFixed(1));
+        pane.setAttribute('y', y.toFixed(1));
+        pane.setAttribute('width', rectW.toFixed(1));
+        pane.setAttribute('height', rectH.toFixed(1));
+
+        shadow.setAttribute('x', (x + 4).toFixed(1));
+        shadow.setAttribute('y', (y + 4).toFixed(1));
+        shadow.setAttribute('width', rectW.toFixed(1));
+        shadow.setAttribute('height', rectH.toFixed(1));
+
+        document.getElementById('svg-width-label').textContent = `W: ${w} mm`;
+        document.getElementById('svg-height-label').textContent = `H: ${h} mm · Qty: ${qty}`;
+
+        // Render visual hole markers (capped visually at 8 markers)
+        const holesLayer = document.getElementById('svg-holes-layer');
+        const visualHoles = Math.min(8, Number(quoteState.holesCount) || 0);
+        let dots = '';
+        for (let i = 0; i < visualHoles; i++) {
+          const offsetY = y + 12 + ((rectH - 24) / Math.max(1, visualHoles - 1)) * (visualHoles === 1 ? 0.5 : i);
+          dots += `<circle cx="${(x + 12).toFixed(1)}" cy="${offsetY.toFixed(1)}" r="3.2" fill="#0B1B2B" stroke="#FF7A1A" stroke-width="1.4" />`;
+        }
+        holesLayer.innerHTML = dots;
+      }
+
+      /* ==================== QUOTE STEP NAVIGATION & VALIDATION ==================== */
+      function showError(msg) {
+        const box = document.getElementById('quote-error-box');
+        if (!msg) {
+          box.classList.add('hidden');
+          box.textContent = '';
+          return;
+        }
+        box.textContent = msg;
+        box.classList.remove('hidden');
+      }
+
+      function validateStep(stepNum) {
+        const e = COPY.errors;
+        if (stepNum === 2) {
+          const w = Number(document.getElementById('input-width').value);
+          const h = Number(document.getElementById('input-height').value);
+          const q = Number(document.getElementById('input-qty').value);
+          if (!Number.isFinite(w) || w < 100 || w > 3600) {
+            showError(t(e.widthRangeEn, e.widthRangeZh));
+            return false;
+          }
+          if (!Number.isFinite(h) || h < 100 || h > 3600) {
+            showError(t(e.heightRangeEn, e.heightRangeZh));
+            return false;
+          }
+          if (!Number.isFinite(q) || q < 1 || q > 500 || !Number.isInteger(q)) {
+            showError(t(e.qtyRangeEn, e.qtyRangeZh));
+            return false;
+          }
+        }
+        if (stepNum === 3) {
+          const holes = Number(document.getElementById('input-holes').value);
+          if (!Number.isFinite(holes) || holes < 0 || holes > 50 || !Number.isInteger(holes)) {
+            showError(t(e.holesRangeEn, e.holesRangeZh));
+            return false;
+          }
+        }
+        if (stepNum === 5) {
+          const name = document.getElementById('input-name').value.trim();
+          const phone = document.getElementById('input-phone').value.trim();
+          const loc = document.getElementById('input-location').value.trim();
+          if (!name || !phone || !loc) {
+            showError(t(e.contactReqEn, e.contactReqZh));
+            return false;
+          }
+          const digits = phone.replace(/\D/g, '');
+          if (digits.length < 7) {
+            showError(t(e.phoneInvalidEn, e.phoneInvalidZh));
+            return false;
+          }
+        }
+        showError('');
+        return true;
+      }
+
+      function updateStepChrome() {
+        const stepInfo = COPY.steps[quoteState.step - 1];
+        document.getElementById('quote-step-counter').textContent = `${t('Step', '第')} ${quoteState.step} / 5`;
+        document.getElementById('quote-step-name').textContent = currentLang === 'zh' ? stepInfo.zh : stepInfo.en;
+        document.getElementById('quote-progress-bar').style.width = `${quoteState.step * 20}%`;
+
+        document.querySelectorAll('.step-panel').forEach((panel) => {
+          const num = Number(panel.getAttribute('data-step-panel'));
+          if (num === quoteState.step) {
+            panel.classList.remove('hidden');
+            panel.classList.add('step-panel-active');
+          } else {
+            panel.classList.add('hidden');
+            panel.classList.remove('step-panel-active');
+          }
+        });
+
+        const prevBtn = document.getElementById('btn-prev-step');
+        const nextBtn = document.getElementById('btn-next-step');
+        const submitBtn = document.getElementById('btn-submit-quote');
+
+        prevBtn.disabled = quoteState.step === 1;
+        if (quoteState.step === 5) {
+          nextBtn.classList.add('hidden');
+          submitBtn.classList.remove('hidden');
+        } else {
+          nextBtn.classList.remove('hidden');
+          submitBtn.classList.add('hidden');
+        }
+
+        renderStepTabs();
+      }
+
+      function goToStep(targetStep) {
+        if (targetStep > quoteState.step) {
+          for (let s = quoteState.step; s < targetStep; s++) {
+            if (!validateStep(s)) return;
+          }
+        } else {
+          showError('');
+        }
+        quoteState.step = targetStep;
+        updateStepChrome();
+      }
+
+      /* ==================== QUOTE SUBMISSION SUMMARY & CHANNEL ROUTING ==================== */
+      function buildQuotePayloadText() {
+        const prod = getProductById(quoteState.glassType);
+        const edge = getEdgeById(quoteState.edgeType);
+        const w = Number(quoteState.widthMm);
+        const h = Number(quoteState.heightMm);
+        const qty = Number(quoteState.quantity);
+        const totalArea = (calcAreaSqm(w, h) * qty).toFixed(2);
+        const preferZh = quoteState.quoteLanguage === 'zh';
+
+        if (preferZh) {
+          return [
+            '【ATC Glass 定制玻璃报价申请】',
+            `玻璃类型：${prod.zh} (${prod.en})`,
+            `尺寸与数量：${w} × ${h} mm × ${qty} 片`,
+            `总面积：${totalArea} m²`,
+            `厚度：${quoteState.thicknessMm} mm`,
+            `磨边工艺：${edge.zh}`,
+            `打孔/开缺：${quoteState.holesCount} 处${quoteState.cutoutNotes ? `（${quoteState.cutoutNotes}）` : ''}`,
+            `现场照片：${quoteState.photoName ? `已选本地照片 (${quoteState.photoName}) — 发送时可一并附带` : '未附带'}`,
+            '---',
+            `联系人：${quoteState.contactName}`,
+            `联系电话/微信：${quoteState.contactPhone}`,
+            `项目地点：${quoteState.projectLocation}`,
+            '期望报价语言：简体中文',
+          ].join('\n');
+        }
+
+        return [
+          '[ATC GLASS — CUSTOM QUOTE REQUEST]',
+          `Glass Type: ${prod.en}`,
+          `Dimensions & Qty: ${w} x ${h} mm x ${qty} pc(s)`,
+          `Total Area: ${totalArea} m²`,
+          `Thickness: ${quoteState.thicknessMm} mm`,
+          `Edge Finish: ${edge.en}`,
+          `Holes / Cutouts: ${quoteState.holesCount}${quoteState.cutoutNotes ? ` (${quoteState.cutoutNotes})` : ''}`,
+          `Site Photo: ${quoteState.photoName ? `Selected locally (${quoteState.photoName}) — attach when sending` : 'None'}`,
+          '---',
+          `Contact: ${quoteState.contactName}`,
+          `Mobile / Messaging: ${quoteState.contactPhone}`,
+          `Project Location: ${quoteState.projectLocation}`,
+          'Preferred Quote Language: English',
+        ].join('\n');
+      }
+
+      function renderSummaryView() {
+        const form = document.getElementById('quote-form');
+        const summaryView = document.getElementById('quote-summary-view');
+        form.classList.add('hidden');
+        summaryView.classList.remove('hidden');
+
+        const slaEl = document.getElementById('quote-sla-banner');
+        slaEl.textContent = t(
+          `Quote summary ready — We'll send your quote within [${COPY.config.slaHours}]`,
+          `报价单已生成 — 我们将在 [${COPY.config.slaHoursZh}] 内发送正式报价`
+        );
+
+        const payload = buildQuotePayloadText();
+        document.getElementById('quote-summary-text').textContent = payload;
+
+        const photoNote = document.getElementById('summary-photo-note');
+        if (quoteState.photoDataUrl) {
+          photoNote.classList.remove('hidden');
+          photoNote.innerHTML = `${t('Attached preview:', '已选现场图：')} <strong class="text-navy-900">${quoteState.photoName}</strong> — ${t('please attach this image directly in WhatsApp, Email, or WeChat.', '请在发送 WhatsApp、邮件或微信时直接附带此图片。')}`;
+        } else {
+          photoNote.classList.add('hidden');
+        }
+
+        // Bind WhatsApp, Email, Phone links
+        const encoded = encodeURIComponent(payload);
+        document.getElementById('dispatch-whatsapp').href = `https://wa.me/${COPY.config.whatsappNumber}?text=${encoded}`;
+
+        const subject = encodeURIComponent(`ATC Glass Quote Request — ${quoteState.contactName}`);
+        document.getElementById('dispatch-email').href = `mailto:${COPY.config.email}?subject=${subject}&body=${encoded}`;
+
+        document.getElementById('dispatch-phone').href = COPY.config.phoneHref;
+        document.getElementById('dispatch-phone-label').textContent = COPY.config.phoneDisplay;
+      }
+
+      /* ==================== EVENT LISTENERS ==================== */
+      function initEvents() {
+        // Language switcher
+        document.querySelectorAll('[data-lang-switch]').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            applyLanguage(btn.getAttribute('data-lang-switch'), true);
+          });
+        });
+
+        // Mobile drawer toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const drawer = document.getElementById('mobile-nav-drawer');
+        const iconOpen = document.getElementById('menu-icon-open');
+        const iconClose = document.getElementById('menu-icon-close');
+
+        function closeMobileMenu() {
+          drawer.classList.remove('open');
+          menuBtn.setAttribute('aria-expanded', 'false');
+          iconOpen.classList.remove('hidden');
+          iconClose.classList.add('hidden');
+        }
+
+        menuBtn.addEventListener('click', () => {
+          const isOpen = drawer.classList.toggle('open');
+          menuBtn.setAttribute('aria-expanded', String(isOpen));
+          iconOpen.classList.toggle('hidden', isOpen);
+          iconClose.classList.toggle('hidden', !isOpen);
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+          link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Product card click -> prefill quote builder & scroll
+        document.getElementById('products-grid').addEventListener('click', (e) => {
+          const btn = e.target.closest('[data-select-product]');
+          if (!btn) return;
+          const pid = btn.getAttribute('data-select-product');
+          const prod = getProductById(pid);
+          quoteState.glassType = prod.id;
+          quoteState.thicknessMm = prod.defaultThickness;
+          quoteState.submitted = false;
+          document.getElementById('quote-summary-view').classList.add('hidden');
+          document.getElementById('quote-form').classList.remove('hidden');
+          quoteState.step = 2;
+          renderStep1Options();
+          renderThicknessOptions();
+          updateStepChrome();
+          updateLivePreview();
+          document.getElementById('quote').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // 3D Glass Anatomy "Quote With These Specs" CTA -> sync thickness & edge into quote builder
+        const anatomyQuoteCta = document.getElementById('anatomy-quote-cta');
+        if (anatomyQuoteCta) {
+          anatomyQuoteCta.addEventListener('click', () => {
+            const activeThickBtn = document.querySelector('[data-anatomy-thickness][aria-pressed="true"]');
+            const activeEdgeBtn = document.querySelector('[data-anatomy-edge][aria-pressed="true"]');
+            if (activeThickBtn) {
+              quoteState.thicknessMm = Number(activeThickBtn.getAttribute('data-anatomy-thickness') || 10);
+            }
+            if (activeEdgeBtn) {
+              quoteState.edgeType = activeEdgeBtn.getAttribute('data-anatomy-edge') || 'bevel';
+            }
+            quoteState.submitted = false;
+            document.getElementById('quote-summary-view').classList.add('hidden');
+            document.getElementById('quote-form').classList.remove('hidden');
+            renderThicknessOptions();
+            renderEdgeOptions();
+            updateLivePreview();
+          });
+        }
+
+        // Step tabs click
+        document.getElementById('quote-step-tabs').addEventListener('click', (e) => {
+          const tab = e.target.closest('[data-jump-step]');
+          if (!tab) return;
+          goToStep(Number(tab.getAttribute('data-jump-step')));
+        });
+
+        // Step 1 glass type selection
+        document.getElementById('step1-options').addEventListener('click', (e) => {
+          const btn = e.target.closest('[data-step1-pick]');
+          if (!btn) return;
+          const pid = btn.getAttribute('data-step1-pick');
+          const prod = getProductById(pid);
+          quoteState.glassType = pid;
+          quoteState.thicknessMm = prod.defaultThickness;
+          renderStep1Options();
+          renderThicknessOptions();
+          updateLivePreview();
+        });
+
+        // Step 2 presets & inputs
+        document.querySelectorAll('.preset-btn').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const [w, h] = btn.getAttribute('data-preset').split('x').map(Number);
+            document.getElementById('input-width').value = w;
+            document.getElementById('input-height').value = h;
+            quoteState.widthMm = w;
+            quoteState.heightMm = h;
+            showError('');
+            updateLivePreview();
+          });
+        });
+
+        ['input-width', 'input-height', 'input-qty'].forEach((id) => {
+          document.getElementById(id).addEventListener('input', () => {
+            quoteState.widthMm = document.getElementById('input-width').value;
+            quoteState.heightMm = document.getElementById('input-height').value;
+            quoteState.quantity = document.getElementById('input-qty').value;
+            updateLivePreview();
+          });
+        });
+
+        // Step 3 thickness, edge, holes, notes
+        document.getElementById('thickness-options').addEventListener('click', (e) => {
+          const btn = e.target.closest('[data-thickness-pick]');
+          if (!btn) return;
+          quoteState.thicknessMm = Number(btn.getAttribute('data-thickness-pick'));
+          renderThicknessOptions();
+          updateLivePreview();
+        });
+
+        document.getElementById('edge-options').addEventListener('click', (e) => {
+          const btn = e.target.closest('[data-edge-pick]');
+          if (!btn) return;
+          quoteState.edgeType = btn.getAttribute('data-edge-pick');
+          renderEdgeOptions();
+          updateLivePreview();
+        });
+
+        document.getElementById('input-holes').addEventListener('input', (e) => {
+          quoteState.holesCount = e.target.value || 0;
+          updateLivePreview();
+        });
+
+        document.getElementById('input-notes').addEventListener('input', (e) => {
+          quoteState.cutoutNotes = e.target.value.trim();
+        });
+
+        // Step 4 client-side photo preview
+        const photoInput = document.getElementById('input-photo');
+        const photoBox = document.getElementById('photo-preview-box');
+        const photoImg = document.getElementById('photo-preview-img');
+
+        photoInput.addEventListener('change', (e) => {
+          const file = e.target.files && e.target.files[0];
+          if (!file) return;
+
+          if (!file.type.startsWith('image/')) {
+            showError(t(COPY.errors.photoTypeEn, COPY.errors.photoTypeZh));
+            photoInput.value = '';
+            return;
+          }
+          if (file.size > 10 * 1024 * 1024) {
+            showError(t(COPY.errors.photoSizeEn, COPY.errors.photoSizeZh));
+            photoInput.value = '';
+            return;
+          }
+          showError('');
+
+          const reader = new FileReader();
+          reader.onload = () => {
+            quoteState.photoDataUrl = String(reader.result || '');
+            quoteState.photoName = file.name;
+            quoteState.photoMeta = `${(file.size / 1024).toFixed(0)} KB`;
+            photoImg.src = quoteState.photoDataUrl;
+            document.getElementById('photo-preview-name').textContent = file.name;
+            document.getElementById('photo-preview-meta').textContent = quoteState.photoMeta;
+            photoBox.classList.remove('hidden');
+            updateLivePreview();
+          };
+          reader.readAsDataURL(file);
+        });
+
+        document.getElementById('photo-remove-btn').addEventListener('click', () => {
+          quoteState.photoDataUrl = '';
+          quoteState.photoName = '';
+          quoteState.photoMeta = '';
+          photoInput.value = '';
+          photoImg.src = '';
+          photoBox.classList.add('hidden');
+          updateLivePreview();
+        });
+
+        // Step 5 contact & language radio
+        document.querySelectorAll('input[name="quoteLang"]').forEach((radio) => {
+          radio.addEventListener('change', (e) => {
+            quoteState.quoteLanguage = e.target.value;
+            quoteState.quoteLanguageManual = true;
+            updateLivePreview();
+          });
+        });
+
+        // Prev / Next / Submit
+        document.getElementById('btn-prev-step').addEventListener('click', () => {
+          if (quoteState.step > 1) {
+            goToStep(quoteState.step - 1);
+          }
+        });
+
+        document.getElementById('btn-next-step').addEventListener('click', () => {
+          if (validateStep(quoteState.step) && quoteState.step < 5) {
+            goToStep(quoteState.step + 1);
+          }
+        });
+
+        document.getElementById('quote-form').addEventListener('submit', (e) => {
+          e.preventDefault();
+          if (!validateStep(2) || !validateStep(3) || !validateStep(5)) return;
+
+          quoteState.contactName = document.getElementById('input-name').value.trim();
+          quoteState.contactPhone = document.getElementById('input-phone').value.trim();
+          quoteState.projectLocation = document.getElementById('input-location').value.trim();
+          quoteState.submitted = true;
+          renderSummaryView();
+        });
+
+        // Summary Actions: Copy Summary, WeChat Copy, Edit, Reset
+        const toastEl = document.getElementById('copy-feedback-toast');
+
+        document.getElementById('btn-copy-summary').addEventListener('click', async () => {
+          const text = buildQuotePayloadText();
+          try {
+            await navigator.clipboard.writeText(text);
+            showToast(toastEl, t('Quote summary copied to clipboard.', '报价规格摘要已复制到剪贴板。'));
+          } catch (err) {
+            showToast(toastEl, t('Copy blocked — please select and copy the summary box manually.', '剪贴板受限，请手动选中上方摘要文本复制。'));
+          }
+        });
+
+        document.getElementById('dispatch-wechat').addEventListener('click', async () => {
+          const wechatPayload = `${t('WeChat ID:', '微信号:')} ${COPY.config.wechatId}\n\n${buildQuotePayloadText()}`;
+          try {
+            await navigator.clipboard.writeText(wechatPayload);
+            showToast(
+              toastEl,
+              t(
+                `Copied WeChat ID (${COPY.config.wechatId}) & full quote summary. Paste directly into WeChat.`,
+                `已复制微信号（${COPY.config.wechatId}）及完整报价摘要，请打开微信直接粘贴发送。`
+              )
+            );
+          } catch (err) {
+            showToast(toastEl, t(`Add WeChat ID: ${COPY.config.wechatId}`, `请添加微信号：${COPY.config.wechatId}`));
+          }
+        });
+
+        document.getElementById('btn-edit-quote').addEventListener('click', () => {
+          quoteState.submitted = false;
+          document.getElementById('quote-summary-view').classList.add('hidden');
+          document.getElementById('quote-form').classList.remove('hidden');
+          goToStep(5);
+        });
+
+        document.getElementById('btn-reset-quote').addEventListener('click', () => {
+          quoteState.step = 1;
+          quoteState.glassType = 'tempered';
+          quoteState.widthMm = 900;
+          quoteState.heightMm = 2100;
+          quoteState.quantity = 1;
+          quoteState.thicknessMm = 10;
+          quoteState.edgeType = 'flat';
+          quoteState.holesCount = 0;
+          quoteState.cutoutNotes = '';
+          quoteState.photoDataUrl = '';
+          quoteState.photoName = '';
+          quoteState.quoteLanguage = currentLang;
+          quoteState.quoteLanguageManual = false;
+          quoteState.submitted = false;
+
+          document.getElementById('quote-form').reset();
+          const targetRadio = document.querySelector(`input[name="quoteLang"][value="${currentLang}"]`);
+          if (targetRadio) targetRadio.checked = true;
+          document.getElementById('input-width').value = 900;
+          document.getElementById('input-height').value = 2100;
+          document.getElementById('input-qty').value = 1;
+          document.getElementById('input-holes').value = 0;
+          document.getElementById('photo-preview-box').classList.add('hidden');
+
+          document.getElementById('quote-summary-view').classList.add('hidden');
+          document.getElementById('quote-form').classList.remove('hidden');
+          renderStep1Options();
+          renderThicknessOptions();
+          renderEdgeOptions();
+          updateStepChrome();
+          updateLivePreview();
+        });
+
+        // Gallery Filter Tabs
+        document.querySelectorAll('.gallery-tab').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            quoteState.galleryFilter = btn.getAttribute('data-gallery-filter');
+            renderGallery();
+          });
+        });
+
+        // Contact Section WeChat Copy
+        document.getElementById('contact-wechat-copy').addEventListener('click', async () => {
+          const contactToast = document.getElementById('contact-toast');
+          try {
+            await navigator.clipboard.writeText(COPY.config.wechatId);
+            showToast(contactToast, t(`WeChat ID copied: ${COPY.config.wechatId}`, `已复制微信号：${COPY.config.wechatId}`));
+          } catch (err) {
+            showToast(contactToast, t(`WeChat ID: ${COPY.config.wechatId}`, `微信号：${COPY.config.wechatId}`));
+          }
+        });
+      }
+
+      /* ==================== STAGGERED SCROLL REVEAL ==================== */
+      function initScrollReveals() {
+        const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (prefersReduced || !('IntersectionObserver' in window)) return;
+
+        document.documentElement.classList.add('js-reveal-ready');
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry, i) => {
+              if (entry.isIntersecting) {
+                setTimeout(() => {
+                  entry.target.classList.add('is-visible');
+                }, Math.min(i * 60, 240));
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }
+        );
+
+        document.querySelectorAll('.reveal-item').forEach((el) => observer.observe(el));
+      }
+
+      /* ==================== BOOTSTRAP ==================== */
+      document.addEventListener('DOMContentLoaded', () => {
+        applyLanguage(currentLang, false);
+        initEvents();
+        initScrollReveals();
+      });
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
